@@ -1,7 +1,130 @@
 .header{
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    padding: 15px 40px;
+    position: relative;
+   
+    .logo{
+        display: flex;      
+         margin-right: 81px;
+    }
+    .coding{
+        width: 44.0px;
+        height: 15.0px;
+        color: #000;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
 
+    }
+
+    .magic{
+    width: 30.0px;
+    height: 18.0px;
+    color: #000;
+    font-family: Sacramento;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    }
+    .img-logo{
+        margin-right: 9px;
+    }
+
+    .list-coding{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+        
+        .list {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        }
+    
+
+        .link{
+        width: 83.0px;
+        height: 15.0px;
+        color: #000;
+        font-family: Sacramento;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        }
+    
+    .hellow {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-left: auto;
+    }
 
     .img-sun{
-        background-color: red;
+        width: 20px;
+        height: 20px;
+        transition: all 0.3s ease;
+        filter: invert(0); 
+    }
+    
+    .img-monthn{
+        width: 18px;
+        height: 18px;
+        transition: all 0.3s ease;
+        opacity: 0;
+        filter: invert(1);
+    }
+
+    .input{
+        display: none;
+    }
+    
+    .label{
+        display: flex;
+        align-items: center;
+        border: 2px solid #e0e0e0;
+        border-radius: 50px;
+        padding: 6px 10px;
+        cursor: pointer;
+        background: #7A7A7A; 
+        gap: 8px;
+    }
+
+    #switch-btn:checked ~ .label {
+        .img-sun{
+            opacity: 0;
+            transform: rotate(90deg);
+        }
+        
+        .img-monthn{
+            opacity: 1;
+            transform: rotate(-90deg);
+        }
+    }
+    
+    .text{
+        width: 94.0px;
+        height: 15.0px;
+        color: #000;
+        text-align: right;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0;
+        white-space: nowrap;
     }
 }
+
