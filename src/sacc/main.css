@@ -1,3 +1,4 @@
+@charset "UTF-8";
 a {
   text-decoration: none;
 }
@@ -43,86 +44,80 @@ button {
   cursor: pointer;
 }
 
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  outline: 1px solid rgb(255, 0, 0);
+}
+
+/* Хедер */
 .header {
   background-color: white;
   border-bottom: 1px solid #e0e0e0;
-  display: flex;
-  align-items: center;
-  padding: 15px 40px;
-  position: relative;
+}
+
+/* Логотип */
+.header {
+  /* Навігація */
+  /* Привітання + перемикач теми */
 }
 .header .logo {
   display: flex;
-  margin-right: 81px;
+  align-items: center;
+  text-decoration: none;
 }
-.header .coding {
-  width: 44px;
-  height: 15px;
-  color: #000;
-  font-family: "Montserrat Alternates";
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.header .magic {
-  width: 30px;
-  height: 18px;
-  color: #000;
-  font-family: Sacramento;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.header .img-logo {
+.header .logo .img-logo {
   margin-right: 9px;
 }
-.header .list-coding {
+.header .logo .list-coding {
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.header .list {
+.header .logo .list-coding .coding {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+}
+.header .logo .list-coding .magic {
+  color: #000;
+  font-family: Sacramento;
+  font-size: 12px;
+  margin: 0;
+}
+.header .nav .list {
   display: flex;
   gap: 50px;
   align-items: center;
 }
-.header .link {
-  width: 83px;
-  height: 15px;
+.header .nav .list .item {
+  list-style: none;
+}
+.header .nav .list .item .link {
   color: #000;
   font-family: Sacramento;
   font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  text-decoration: none;
 }
 .header .hellow {
   display: flex;
   align-items: center;
   gap: 15px;
   margin-left: auto;
+  /* Анімація перемикача */
 }
-.header .img-sun {
-  width: 20px;
-  height: 20px;
-  transition: all 0.3s ease;
-  filter: invert(0);
-}
-.header .img-monthn {
-  width: 18px;
-  height: 18px;
-  transition: all 0.3s ease;
-  opacity: 0;
-  filter: invert(1);
-}
-.header .input {
+.header .hellow .input {
   display: none;
 }
-.header .label {
+.header .hellow .label {
   display: flex;
   align-items: center;
   border: 2px solid #e0e0e0;
@@ -132,24 +127,32 @@ button {
   background: #7A7A7A;
   gap: 8px;
 }
-.header #switch-btn:checked ~ .label .img-sun {
+.header .hellow .label .img-sun {
+  width: 20px;
+  height: 20px;
+  transition: all 0.3s ease;
+  filter: invert(0);
+}
+.header .hellow .label .img-monthn {
+  width: 18px;
+  height: 18px;
+  transition: all 0.3s ease;
+  opacity: 0;
+  filter: invert(1);
+}
+.header .hellow #switch-btn:checked ~ .label .img-sun {
   opacity: 0;
   transform: rotate(90deg);
 }
-.header #switch-btn:checked ~ .label .img-monthn {
+.header .hellow #switch-btn:checked ~ .label .img-monthn {
   opacity: 1;
   transform: rotate(-90deg);
 }
-.header .text {
-  width: 94px;
-  height: 15px;
+.header .hellow .text {
   color: #000;
-  text-align: right;
   font-family: "Montserrat Alternates";
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   margin: 0;
   white-space: nowrap;
 }/*# sourceMappingURL=main.css.map */
