@@ -186,4 +186,52 @@ button {
   width: 536px;
   height: 1px;
   background-color: #000;
+}
+
+.years {
+  padding-top: 42px;
+}
+.years__title {
+  width: 283px;
+  height: 20px;
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-weight: 400;
+}
+.years__input {
+  width: 215px;
+  height: 35px;
+  padding: 10px 45px 10px 10px;
+  display: inline-flex;
+  padding: 10px 45px 10px 10px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 20px;
+  background: #D7D7D7;
+}
+.years__input::-moz-placeholder {
+  color: #7E7E7E;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.years__input::placeholder {
+  color: #7E7E7E;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.years__text {
+  width: 212px;
+  height: 15px;
+  color: #039900;
+  text-align: right;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
 }/*# sourceMappingURL=main.css.map */
