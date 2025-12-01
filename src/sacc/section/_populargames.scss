@@ -1,1 +1,37 @@
 @use "../base/variable" as *;
+
+.popular-games{
+    padding-top: 60px;
+    padding-bottom: 36px;
+
+    .container {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        text-align: center; 
+    }
+
+    .title{
+        width: 386.0px;
+        height: 29.0px;
+        color: #000;
+        font-family: "Montserrat Alternates";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        position: relative;
+        padding-bottom: 82px; 
+        
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: 0; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            width: 536px;
+            height: 1px;
+            background-color: #000; 
+        }
+    }
+}
