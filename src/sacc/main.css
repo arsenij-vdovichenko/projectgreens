@@ -158,29 +158,26 @@ button {
   transform: rotate(-90deg);
 }
 
-.popular-games {
+.popular__games {
   padding-top: 60px;
-  padding-bottom: 36px;
 }
-.popular-games .container {
+.popular__games__box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   text-align: center;
 }
-.popular-games .title {
+.popular__games__title {
   width: 386px;
-  height: 29px;
   color: #000;
   font-family: "Montserrat Alternates";
   font-size: 24px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   position: relative;
-  padding-bottom: 82px;
+  padding-bottom: 36px;
+  margin: 0;
 }
-.popular-games .title::after {
+.popular__games__title::after {
   content: "";
   position: absolute;
   bottom: 0;
