@@ -1,4 +1,3 @@
-@charset "UTF-8";
 a {
   text-decoration: none;
 }
@@ -47,77 +46,89 @@ button {
 .container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 15px 40px;
-  display: flex;
-  align-items: center;
-  gap: 40px;
+  padding: 0 8px;
   outline: 1px solid rgb(255, 0, 0);
 }
 
-/* Хедер */
 .header {
   background-color: white;
   border-bottom: 1px solid #e0e0e0;
+  padding: 15px 0;
 }
-
-/* Логотип */
-.header {
-  /* Навігація */
-  /* Привітання + перемикач теми */
-}
-.header .logo {
+.header .container {
   display: flex;
   align-items: center;
+}
+.header__link {
+  display: flex;
+  align-items: center;
+  gap: 9px;
   text-decoration: none;
 }
-.header .logo .img-logo {
+.header__logo {
+  width: 50px;
+  height: 50px;
   margin-right: 9px;
 }
-.header .logo .list-coding {
+.header__list {
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
+  line-height: 1.2;
 }
-.header .logo .list-coding .coding {
+.header__coding {
+  font-family: "Montserrat Alternates";
+  font-size: 14px;
+  font-weight: 600;
   color: #000;
+  margin: 0;
+}
+.header__magic {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  margin: 0;
+}
+.header .nav__list {
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: 81px;
+}
+.header .nav__item .link {
+  width: 97px;
+  height: 15px;
+  color: #000;
+  border-radius: 20px;
+  transition: all 0.3s ease;
   font-family: "Montserrat Alternates";
   font-size: 12px;
   font-weight: 400;
-  margin: 0;
+  line-height: normal;
 }
-.header .logo .list-coding .magic {
-  color: #000;
-  font-family: Sacramento;
-  font-size: 12px;
-  margin: 0;
-}
-.header .nav .list {
-  display: flex;
-  gap: 50px;
-  align-items: center;
-}
-.header .nav .list .item {
-  list-style: none;
-}
-.header .nav .list .item .link {
-  color: #000;
-  font-family: Sacramento;
-  font-size: 12px;
-  text-decoration: none;
+.header .nav__item .link:hover {
+  background-color: #f5f5f5;
 }
 .header .hellow {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 51px;
   margin-left: auto;
-  /* Анімація перемикача */
 }
-.header .hellow .input {
+.header .hellow__text {
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  color: #000;
+  margin: 0;
+}
+.header .hellow__input {
   display: none;
 }
-.header .hellow .label {
+.header .hellow__label {
   display: flex;
   align-items: center;
   border: 2px solid #e0e0e0;
@@ -127,32 +138,55 @@ button {
   background: #7A7A7A;
   gap: 8px;
 }
-.header .hellow .label .img-sun {
+.header .hellow__sun {
   width: 20px;
   height: 20px;
   transition: all 0.3s ease;
-  filter: invert(0);
 }
-.header .hellow .label .img-monthn {
+.header .hellow__monthn {
   width: 18px;
   height: 18px;
   transition: all 0.3s ease;
   opacity: 0;
-  filter: invert(1);
 }
-.header .hellow #switch-btn:checked ~ .label .img-sun {
+.header .hellow #hellow__btn:checked ~ .hellow__label .hellow__sun {
   opacity: 0;
   transform: rotate(90deg);
 }
-.header .hellow #switch-btn:checked ~ .label .img-monthn {
+.header .hellow #hellow__btn:checked ~ .hellow__label .hellow__monthn {
   opacity: 1;
   transform: rotate(-90deg);
 }
-.header .hellow .text {
+
+.popular-games {
+  padding-top: 60px;
+  padding-bottom: 36px;
+}
+.popular-games .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.popular-games .title {
+  width: 386px;
+  height: 29px;
   color: #000;
   font-family: "Montserrat Alternates";
-  font-size: 12px;
+  font-size: 24px;
+  font-style: normal;
   font-weight: 400;
-  margin: 0;
-  white-space: nowrap;
+  line-height: normal;
+  position: relative;
+  padding-bottom: 82px;
+}
+.popular-games .title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 536px;
+  height: 1px;
+  background-color: #000;
 }/*# sourceMappingURL=main.css.map */
