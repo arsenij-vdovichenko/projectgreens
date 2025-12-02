@@ -435,4 +435,9 @@ button {
 }
 .calculator__box--second {
   margin-right: 58px;
+}
+
+.header-modal__overlay {
+  width: 15px;
+  height: 15px;
 }/*# sourceMappingURL=main.css.map */

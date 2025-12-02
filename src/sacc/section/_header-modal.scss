@@ -1,1 +1,11 @@
 @use "../base/variable" as *;
+
+
+
+
+.header-modal{
+    &__overlay{
+    width: 15.0px;
+    height: 15.0px;
+    }
+}
