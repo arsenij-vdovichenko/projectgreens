@@ -381,6 +381,18 @@ button {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 36px;
+  position: relative;
+}
+.calculator__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 536px;
+  height: 1px;
+  background-color: #000;
+  top: 155px;
 }
 .calculator__box {
   display: flex;
