@@ -194,6 +194,7 @@ button {
 .years__title {
   color: #000;
   position: relative;
+  font-size: 16px;
   font-family: "Montserrat Alternates";
   font-weight: 400;
   margin-bottom: 20px;
@@ -248,19 +249,32 @@ button {
   text-align: center;
   padding-top: 66px;
 }
-.guessnumbers .guessnumbers__title {
+.guessnumbers__title {
   color: #000;
   font-family: "Montserrat Alternates";
   font-weight: 400;
+  position: relative;
+  font-size: 16px;
 }
-.guessnumbers .guessnumbers__box {
+.guessnumbers__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 536px;
+  height: 1px;
+  background-color: #000;
+  top: 145px;
+}
+.guessnumbers__box {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 36px;
   gap: 202px;
 }
-.guessnumbers .guessnumbers__text {
+.guessnumbers__text {
   color: #039900;
   font-family: "Montserrat Alternates";
   font-weight: 400;
@@ -284,4 +298,70 @@ button {
   color: #7E7E7E;
   font-family: "Montserrat Alternates";
   font-weight: 400;
+}
+
+.paper {
+  padding-top: 80px;
+  text-align: center;
+}
+.paper__title {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-size: 16px;
+  position: relative;
+}
+.paper__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 536px;
+  height: 1px;
+  background-color: #000;
+  top: 245px;
+}
+.paper__content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+}
+.paper__box {
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+}
+.paper__img {
+  width: 40px;
+  height: 40px;
+}
+.paper__score {
+  position: absolute;
+  left: 50%;
+  transform: translateX(150%);
+  top: 50%;
+  transform: translateX(150%) translateY(-50%);
+  text-align: left;
+}
+.paper__win {
+  margin-top: 36px;
+  color: #039900;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+}
+.paper__button {
+  margin-top: 36px;
+  color: #FFF;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  padding: 10px 20px;
+  gap: 10px;
+  border-radius: 20px;
+  background: #000;
+  width: 182px;
+  height: 35px;
 }/*# sourceMappingURL=main.css.map */

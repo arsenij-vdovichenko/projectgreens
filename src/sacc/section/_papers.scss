@@ -1,1 +1,81 @@
 @use "../base/variable" as *;
+
+.paper{
+    padding-top: 80px;
+    text-align: center;
+
+    &__title{
+        color: #000;
+        font-family: "Montserrat Alternates";
+        font-weight: 400;
+        font-size: 16px;
+        position: relative;
+         &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 536px;
+      height: 1px;
+      background-color: #000;
+      top: 245px;
+    }
+
+
+    }
+
+    &__content{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: 36px;
+    }
+
+    &__box{
+        display: flex;
+        justify-content: center;
+        gap: 38px;
+        
+    }
+
+    &__img{
+        width: 40.0px;
+        height: 40.0px;
+
+    }
+   
+    &__score{
+        position: absolute;
+        left: 50%;
+        transform: translateX(150%);
+        top: 50%;
+        transform: translateX(150%) translateY(-50%);
+        text-align: left;
+    }
+
+    &__win{
+        margin-top: 36px;  
+        color: #039900;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    &__button{
+        margin-top: 36px;
+        color: #FFF;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-weight: 400;
+
+
+        padding: 10px 20px;
+        gap: 10px;
+        border-radius: 20px;
+        background: #000;
+        width: 182.0px;
+        height: 35.0px;
+
+    }
+}
