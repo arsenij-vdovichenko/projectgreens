@@ -364,4 +364,63 @@ button {
   background: #000;
   width: 182px;
   height: 35px;
+}
+
+.calculator {
+  padding-top: 62px;
+  text-align: center;
+}
+.calculator__content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.calculator__title {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 36px;
+}
+.calculator__box {
+  display: flex;
+  flex-direction: column;
+}
+.calculator__img {
+  width: 27px;
+  padding: 10px, 5px;
+  cursor: pointer;
+}
+.calculator__input {
+  width: 150px;
+  height: 35px;
+  padding: 10px;
+  border-radius: 20px;
+  background: #D7D7D7;
+  border: none;
+  box-shadow: 0 8px 25px rgba(70, 70, 70, 0.4);
+  transition: all 0.3s ease;
+}
+.calculator__input::-moz-placeholder {
+  color: #7E7E7E;
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+}
+.calculator__input::placeholder {
+  color: #7E7E7E;
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+}
+.calculator__input--first {
+  margin-right: 38px;
+  margin-left: 175px;
+}
+.calculator__input--second {
+  margin-right: 38px;
+}
+.calculator__input--result {
+  margin-left: 38px;
+}
+.calculator__box--second {
+  margin-right: 58px;
 }/*# sourceMappingURL=main.css.map */
