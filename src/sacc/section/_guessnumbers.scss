@@ -1,5 +1,50 @@
 @use "../base/variable" as *;
 
 
+.guessnumbers{
+    text-align: center; 
+    padding-top: 66px;
 
+
+    .guessnumbers__title{
+        color: #000;
+        font-family: "Montserrat Alternates";
+        font-weight: 400;
+
+
+    }   
+
+    .guessnumbers__box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 36px;
+        gap: 202px;
+    }
+    
+    .guessnumbers__text{
+        color: #039900;
+        font-family: "Montserrat Alternates";
+        font-weight: 400;
+    }  
+
+
+     &__input {
+        width: 150.0px;
+        height: 35.0px;
+        padding: 10px;
+        border-radius: 20px;
+        background: #D7D7D7;
+        border: none;
+        box-shadow: 0 8px 25px rgba(70, 70, 70, 0.4); 
+        transition: all 0.3s ease;
+
+        &::placeholder{
+        color: #7E7E7E;
+        font-family: "Montserrat Alternates";
+        font-weight: 400;
+        }
+    }
+
+}
 
