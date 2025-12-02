@@ -7,8 +7,8 @@
     <title>Vanilla App Template</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <script type="module" crossorigin src="/Vite_vanilla-app-template/assets/index-9ec053bf.js"></script>
-    <link rel="stylesheet" href="/Vite_vanilla-app-template/assets/index-77480379.css">
+    <script type="module" crossorigin src="/Vite_vanilla-app-template/assets/index-24855b03.js"></script>
+    <link rel="stylesheet" href="/Vite_vanilla-app-template/assets/index-1cb10625.css">
   </head>
   <body>
  
@@ -98,7 +98,31 @@
 
     </div>
 </section>
+    <section class="calculator">
+    <div class="container">
+        <h1 class="calculator__title">Калькулятор</h1>
+
+     <div class="calculator__content">
+    <input type="text" class="calculator__input calculator__input--first" placeholder="Введіть перше число">
+
+    <div class="calculator__box calculator__box--first">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAcCAYAAAB2+A+pAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHdSURBVHgBvZaxTsMwEIavIUOHDhkYGJDqgQcoGxuwIcELMMHCXPEEbZ+gSIwMvADsbFWHLgiJDgwMSEkRQwekItEhQ6Vyl5zh6pLGSdP+0qdcHJ1/X2zHAVgsDzlHbhEfGSFTg2d+fgYFiAybCUaL8DkvlxR3MF0Cn/uxVg2yV5nEiPuzqrQoU2mu0oz9gk3la99MMm2uyFRzg1TWWa3mGzlCytrQgXifKlitqNp9EIvN4YZ1iEypYqWNrZa8VLvdhhzSPtuIm8u4VsucQtKLy0U81zbL8zyo1+tRrJSCRqMRxa1Wy7YLuaqj7WX90ahWqxGdTuc3ts1lDpg9qvgL4kMhVYPB4N/YUm8idjcgnuNMkxYEQR7jR6THsUOLqwsZ1e1mTiH15U0J4tfsg+Xrzqkhcirux1QxzfEVrFYPxv24xAFVS78wCoqXWS3p1eGAqj7ka5EaI5dGW0iDcURDULC5Nh0a7dG9YzTSytvlQSwj6vwCZvcuKdR9lxIS6RS5Rk6QLbAXVXmH3HMsNUGe2DzRmETfVvqwHPN1hzGNiD7Tg3lDbdqXzxYZk8rwd47mVcimoWzcSEmikX6IQVifZpz7jrxwPKO0ik3RfNOer8D8z9uEoV3xyddJUkc/nU4LVv4m+VYAAAAASUVORK5CYII=" alt="plus" class="calculator__img">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAG3SURBVHgBvZY9TsNAEIUnIUWKFClSUCDFBQcwJ0B0SHABKmioI98gR0CipOAC0FNCQYeECwqKSMaIIgVSLOHChaUwz54lyyr+jZ0nffLuJrvP451ZmyhfQ+aCuWU8ZsEshVcZP6cGBKOpYZCHJ/+vJUsWWNbAk/mlZVeIKouFrFMqsk3NdFOryNBryEx/vKMss2nDZoobZrCN6BQ/zDHTV0ZdSuvMonaE6A5JS6KuDLQpmCFCSxmWSuENDaE9prcNQ5U0PWbYpfalZ+kIrgGlZ2eubNumyWSStIMgIMdxqIaGHapw/o3H47+27/tUUjPmUtoxInyktDQKVcHENFRKkuaJ2pWrd/BIsX8eldjHGpozZ1o/RIRImitqRw9GP+xIA9Hhk8Gi5mRGB72rOkSUR3JtQiFj1k2Em9AL/6MhU2U2N8aTvnnSIKMOxLyOsChqbmaMR2rNTsZEnO7XzCmzS8VCVHfMvbR1xcyLmGYaQjgDcbCfyHVfUAbAFZ7XGCkzV/8tzxDq0+p9VlWRmEX64E7BJNzhl2beo2JhzifzJu1/KorQFPYTNTug1WsnFpDd33KNsxb4BWFH1lFRvrHgAAAAAElFTkSuQmCC" alt="minus" class="calculator__img">
+      </div>
+      <div class="calculator__box calculator__box--second">
+     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHZSURBVHgBvZavTsNQFMa/lYmJJatAIBAVCORwc6yOBMQsCgya8ATbG4wFieAFwCNBIEhI6BIEgqQLQUyQrAkTFUvGOdu54a7Q9bZr+ZIv9892769n59zbActlk4/JV2SfPCJPxc8yf4QcxKBOBLDMvnw/kxzZYJrBvqw3Vj1FVHEeyT5Gka0K06FOEtDPCab/vOtxsE7OMOVLcvU/olP+Iu+RKwpkYX7OHBiq2+0ihTi6XWhFtEY+hUFVtdttuK6LRqOBZrOJfr+PIAhgoDH5UfqBBcMS7vV6qNVqqNfr8DwPg8EAhlL7b5LLZRgCOSqG2rY9gzmOYwpVRcMsvsHSFUKr1cpSPE3xdgnzQ2qjWLnShpxDo8yvoDetX2bgHYrVL+A9ipWnDziHnD8fxeRxSD7UxmOVw3MUo9vIeFySDkfHfxkc5KdodKxXSzocpYv8Kpavs7PIXMgPYWkTg5ygCjaMzM/GVmSSK2pH4FnEm55g8SiwQrVnKWYhv78uyAfkDSSLo7om30hf14T8JNBYIIsvXb7Y96XdEisA2xM//AFSME//bBmQVRFYBekVCizUJ9cSFvETfmjwMpLFa97JL9JfUFKEUXE++cxW8fOem4i5uj+lncRt8A1bEQGFX52P5AAAAABJRU5ErkJggg==" alt="multiplication" class="calculator__img">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH0SURBVHgBrZWxTsJQFIaPwMDA0IHBsYMPUDcHk9bNRBNYnWTxAXwDNh/A0aE8gCYydqIMbibUxMHBpI0xkcEIiQwdSPCcem64VNveW/onH20v99y/5/TcFiBfBtJDXCREZsiKmfD4OVQgMuqnDPIIeX4pmbzAqgQhxyvL0sgqixmvo5TZtmayqVlkGFZkJpe3nWXW11nMMIwEhbk3SGvr7FzXXdm2rTL3GzlGmrJZT8eMGI1GOvOvkANhVkNs0JDjOBAEgU6IxRmaYmAC6neblNOyLJ0MP+g+kUOkUQPFPSOEzaKboWiaBoXXNAKh2+2C7/ugKblL22Q4B0V1Oh0YDoewhQxlQyqlaZoQRRFo6lU6T56hrxJF5RwMBlBCfwzHKlFUzvFYaWpaGx1GhvdQUFYqJZW0RDmniCddL+r4E8PvxnTyIj3Pg/lcub+EbpEn6fprh0/oC08vABOqE2V3lhp7EfuQbv0INLZIgRbIZWqMKjmVN35Ukakwm6bGk+v0m4Y6ap/Ny4gWvYDNrUCKxZo7GYHURNfIKbILxaKsqEHu+FzWEnlk00xDEr0D6cV+wsc9RhgQAfPwj5EwC+T/8gxJTVh/z3QVs1ksD9YLgugO3yXzBhSLYt6QZz7fUFGGadHzpD3bgvVnZ8lQd3/ycZm1wA8lSx8H/qaRcAAAAABJRU5ErkJggg==" alt="share" class="calculator__img">
+  </div>
+
+   <input type="text" class="calculator__input calculator__input--second" placeholder="Введіть друге число">
     
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAcCAYAAAB2+A+pAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAG9SURBVHgBvZY/TsMwFMZfQ4YOHTIwMDBk4ABwApQNCS7AlC4cgBu0IxsSI0MuAHtXBjYkOjAwICVCDB2QikSHDJXK++izcB0lMamTn/Qp9ovsz89/4hBVE7CGrISVsuaslaFneR+TA2A4KjGqUirtGhFKB6stlEo/1hzS/7Ms01z6s8rUlaluHtYZp45N9WnfLTMdtWSqdMsadJmt0jfrhNVXhh6tz2lI7YJsj0nbbJ4EugCmyDhUxlZb3pEx2Gf5PtmetTCkJEkK8SiKyBK1ueAZ9Gi9+F2hRjmD+xetv821IGuTLMuoAYG1cRAEFMdxIT4ej8mSN63sY6qxcENqnwnrSlWwqx+oG6Z6BRljmlOyXOeGzFjnWn2BjLHG19QuE6O+6EkB2eIXJiT3mNmCV08KyDqSp0sWrEsjlmMwnhbIHJsr05kR/617RhA770gGsQ3o/II2zy7IVd+9koa4RW5YZ6w9sgdZ3rHupayzZD2JeakxwEcdF8ipPA9EphE0FT1S0VCZTvV3VcagT3/3aFNyMc314E5NI4z0QxuET/ag7TvrRcob1GVsgvXGmR9Q8edtKcKp+JTnsqyjHxv35FulWTeBAAAAAElFTkSuQmCC" alt="will-be" class="calculator__img">
+    
+    <input type="text" class="calculator__input calculator__input--result" placeholder="Результат">
+</div>
+
+    </div>
+</section>
     
     
     
