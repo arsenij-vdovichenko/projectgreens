@@ -1,1 +1,0 @@
-import { footballsect } from "./js/football";
