@@ -437,6 +437,69 @@ button {
   margin-right: 58px;
 }
 
+.football-section #football-field {
+  width: 600px;
+  height: 300px;
+  border: 2px solid black;
+  margin: 20px auto;
+  position: relative;
+  background-color: #5ABB58;
+  border-radius: 25px;
+}
+.football-section #football-field #ball {
+  width: 50px;
+  height: 50px;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/d/d3/Soccerball.svg");
+  position: absolute;
+  background-size: cover;
+  top: 120px;
+  left: 100px;
+  transform: translate(-50%, -50%);
+}
+.football-section #football-field #goal {
+  outline: 2px dashed #7E7E7E;
+  background-color: #D7D7D7;
+  width: 45px;
+  height: 105px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 20px 0 0 20px;
+}
+.football-section #football-field #goal:last-child {
+  right: 0;
+  border-radius: 0 20px 20px 0;
+}
+
+.choose {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+.choose__title {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 36px;
+}
+.choose__item {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  background: #D9D9D9;
+  color: #000;
+  text-align: center;
+  font-family: "Montserrat Alternates";
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+  padding-top: 20px;
+}
+
 .header-modal {
   position: fixed;
   top: 0;
