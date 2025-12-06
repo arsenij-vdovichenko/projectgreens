@@ -1,0 +1,60 @@
+@use "../base/variable" as *;
+
+.years {
+    padding-top: 42px;
+    text-align: center; 
+    
+    &__title {
+        color: #000;
+        position: relative;
+        font-size: 16px;
+        font-family: "Montserrat Alternates";
+        font-weight: 400;
+        margin-bottom: 20px;
+         &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 536px;
+      height: 1px;
+      background-color: #000;
+      top: 170px;
+    }
+    }
+
+    &__box {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        gap: 149px;
+        justify-content: center;
+        margin-top: 46px;
+    }
+
+    &__input {
+        width: 260px;
+        height: 35px;
+        padding: 10px;
+        border-radius: 20px;
+        background: #D7D7D7;
+        border: none;
+        box-shadow: 0 8px 25px rgba(70, 70, 70, 0.4); 
+        transition: all 0.3s ease;
+
+        &::placeholder{
+        color: #7E7E7E;
+        font-family: "Montserrat Alternates";
+        font-weight: 400;
+        }
+    }
+
+    &__text {
+        
+        color: #039900;
+        font-family: "Montserrat Alternates";
+        font-weight: 400;
+        line-height: normal;
+    }
+}
