@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "glob": "^8.1.0",
+    "sass": "^1.94.2",
     "vite": "^4.5.2"
   },
   "author": " <@gmail.com>",
