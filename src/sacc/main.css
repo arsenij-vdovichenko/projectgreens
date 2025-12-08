@@ -512,6 +512,21 @@ button {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.9);
 }
+.header-modal__overlay {
+  width: 576px;
+  height: 370px;
+  background: white;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header-modal__hellow {
+  text-align: center;
+  width: 100%;
+}
 .header-modal__decoret {
   width: 30px;
   height: 30px;
@@ -544,7 +559,6 @@ button {
   font-weight: 400;
   line-height: normal;
   display: flex;
-  margin-top: 46px;
 }
 .header-modal__img {
   width: 15px;
@@ -571,17 +585,6 @@ button {
   font-weight: 400;
   line-height: normal;
 }
-.header-modal__overlay {
-  width: 576px;
-  height: 316px;
-  background: white;
-  border-radius: 20px;
-  position: relative;
-}
-.header-modal__box {
-  display: flex;
-  justify-content: space-between;
-}
 .header-modal__input {
   border-radius: 20px;
   background: #D7D7D7;
@@ -589,7 +592,6 @@ button {
   width: 120px;
   height: 25px;
   padding: 10px 90px 10px 10px;
-  margin-bottom: 18px;
   transition: all 0.3s ease;
 }
 .header-modal__input::-moz-placeholder {
@@ -614,4 +616,8 @@ button {
   background: #000;
   width: 182px;
   height: 40px;
+}
+.header-modal__box {
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */
