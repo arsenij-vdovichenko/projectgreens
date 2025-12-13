@@ -1,4 +1,4 @@
-const listRef = document.querySelector(".choose__list")
+
 
 const scientists = [ 
     { 
@@ -86,6 +86,76 @@ const scientists = [
         id: 12 
     } 
 ];
+const listRef = document.querySelector(".choose__list")
+
+const buttonsRef = document.querySelectorAll(".choose__btn")
+
+buttonsRef.forEach(btn=>{
+    btn.addEventListener("click",(event)=>{
+const action = event.target.dataset.action
+switch(action){
+    case '19st':
+         const getArray = scientists.filter(item=>item.born>1800 && item.born<1901);
+         createItemsWorkUp(getArray)
+         
+         break;
+
+     case 'someYears':
+        const totalYears = scientists.map(item =>item.dead - item.born).reduce((a, b) => a + b, 0);
+        createItemsWorkUp(totalYears)
+        break;
+    case 'alphabet':
+        const alphabetSort = [...scientists].sort((a, b) =>(a.name).localeCompare(b.name));
+        createItemsWorkUp(alphabetSort)
+        break;
+    case 'agePast':
+        const ageSort = [...scientists].sort((a, b) =>(b.dead - b.born) - (a.dead - a.born));
+        createItemsWorkUp(ageSort)
+        break;
+    case 'youngest':
+        const mostYoung= scientists.reduce((a, b) => a.born > b.born ? a : b);
+        createItemsWorkUp([mostYoung])
+        break;
+    case 'albert':
+        const einstein = scientists.find(item => item.name === "Albert" && item.surname === "Einstein")
+        listRef.innerHTML = `
+            <li class="choose__item">
+                <h2 class="choose__name">Albert Einstein</h2>
+                <p class="choose__born">Народився: ${einstein.born}</p>
+            </li>
+        `;
+        
+        break;
+    case 'letterC':
+        console.log("знайти вчених прізвище яких починається на літеру С");
+        break;
+    case 'findOLd':
+        console.log("Знайти вченого який прожив найбільше і вченого який прожив найменьше");
+        break;
+    case 'sameName':
+        console.log("Знайти вчених в яких співпадають перші літери імені і прізвища");
+        break;
+     case 'work19st':
+        console.log("Дізнатися чи всі вченні працювали в 19 столітті");
+        break;
+    
+    
+
+
+        
+        
+        
+         
+    
+}
+
+
+
+    })
+
+    
+})
+
 
 function createItemsWorkUp (scientists){
     listRef.innerHTML = scientists.map(({name, surname, born, dead})=>{
