@@ -97,33 +97,42 @@ buttonsRef.forEach(btn => {
           item => item.born > 1800 && item.born < 1901
         );
         createItemsWorkUp(getArray);
-
         break;
 
       case 'someYears':
-        const totalYears = scientists
-          .map(item => item.dead - item.born)
-          .reduce((a, b) => a + b, 0);
+         const totalYears = scientists
+            .map(item => item.dead - item.born)
+            .reduce((a, b) => a + b, 0);
+
+        listRef.innerHTML = `
+            <li class="choose__item">
+                <h2 class="choose__name">Сума прожитих років:</h2>
+                <p class="choose__born">${totalYears} років</p>
+            </li>`;
         createItemsWorkUp(totalYears);
         break;
+
       case 'alphabet':
         const alphabetSort = [...scientists].sort((a, b) =>
           a.name.localeCompare(b.name)
         );
         createItemsWorkUp(alphabetSort);
         break;
+
       case 'agePast':
         const ageSort = [...scientists].sort(
           (a, b) => b.dead - b.born - (a.dead - a.born)
         );
         createItemsWorkUp(ageSort);
         break;
+
       case 'youngest':
         const mostYoung = scientists.reduce((a, b) =>
           a.born > b.born ? a : b
         );
         createItemsWorkUp([mostYoung]);
         break;
+
       case 'albert':
         const einstein = scientists.find(
           item => item.name === 'Albert' && item.surname === 'Einstein'
@@ -134,23 +143,40 @@ buttonsRef.forEach(btn => {
                 <p class="choose__born">Народився: ${einstein.born}</p>
             </li>
         `;
-
+        createItemsWorkUp(einstein)
         break;
       case 'letterC':
-        console.log('знайти вчених прізвище яких починається на літеру С');
+        const cName = scientists.filter(item => item.surname.startsWith("C"));
+        createItemsWorkUp(cName);
         break;
+
       case 'findOLd':
-        console.log(
-          'Знайти вченого який прожив найбільше і вченого який прожив найменьше'
+        
+          const oldest = scientists.reduce((a, b) =>
+            (a.dead - a.born) > (b.dead - b.born) ? a : b
         );
+        const youngest = scientists.reduce((a, b) =>
+            (a.dead - a.born) < (b.dead - b.born) ? a : b
+        );
+        createItemsWorkUp([oldest, youngest]);;
         break;
+
       case 'sameName':
-        console.log(
-          'Знайти вчених в яких співпадають перші літери імені і прізвища'
+        const sameLetters = scientists.filter(item =>
+            item.name[0] === item.surname[0]
         );
+        createItemsWorkUp(sameLetters);
         break;
+
       case 'work19st':
-        console.log('Дізнатися чи всі вченні працювали в 19 столітті');
+        const worked19 = scientists.every(item => item.born <= 1900 && item.dead >= 1801);
+        listRef.innerHTML = `
+            <li class="choose__item">
+                <h2 class="choose__name">Працювали всі у 19 ст.?</h2>
+                <p class="choose__born">${worked19 ? "Так" : "Ні"}</p>
+            </li>
+        `;
+        createItemsWorkUp(worked19);
         break;
     }
   });
