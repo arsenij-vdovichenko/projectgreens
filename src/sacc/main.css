@@ -157,6 +157,10 @@ button {
   transform: rotate(-90deg);
 }
 
+.active {
+  background-color: gray;
+}
+
 .popular__games {
   padding-top: 60px;
 }
