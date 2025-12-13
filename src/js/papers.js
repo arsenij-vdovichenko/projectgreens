@@ -21,14 +21,36 @@ function getRandomElement(arr) {
 
 function playRound(playerChoice){
 
-  const compputerChoice = getRandomElement(options)
+  const computerChoice = getRandomElement(options)
 
-  if(playerChoice === compputerChoice){
+  if(playerChoice === computerChoice){
     resultText.textContent = "Нічія";
+    resultText.style.color = "gray"
+    return
   }
 
   const playerWin = 
-  (playerChoice === "stone")
-  (playerChoice === "scissors")
-  (playerChoice === "paper")
+  (playerChoice === "stone" && computerChoice === "scissors") ||
+  (playerChoice === "scissors" && computerChoice === "paper") ||
+  (playerChoice === "paper" && computerChoice === "stone");
+
+
+  if(playerWin){
+    player++;
+    resultText.textContent = "Ви виграли раунд!"
+    resultText.style.color = "green"
+  }else{
+    computer++;
+    resultText.textContent = "Ви програли раунд!"
+     resultText.style.color = "red";
+  }
+
+
+  computerText.textContent = `Компютер - ${computer}`
+  playerText.textContent = `Ви - ${player}`
 }
+
+
+stoneRef.addEventListener("click", () => playRound("stone"))
+scissors.addEventListener("click", () => playRound("scissors"))
+paperRef.addEventListener("click", () => playRound("paper"))
