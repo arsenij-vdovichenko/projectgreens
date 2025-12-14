@@ -1,3 +1,4 @@
+import "./sacc/main.scss";
 import "./js/header";
 import "./js/populargames";
 import "./js/years";
