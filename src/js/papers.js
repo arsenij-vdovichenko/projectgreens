@@ -1,6 +1,7 @@
 const stoneRef = document.querySelector("#stone");
 const scissors = document.querySelector("#scissors");
 const paperRef = document.querySelector("#paper");
+const computerButton = document.querySelector(".paper__button");
 
 
 const resultText = document.querySelector(".paper__win");
@@ -12,7 +13,7 @@ const options = ["stone", "scissors", "paper"];
 
 let player = 0;
 let computer = 0;
-
+let lastComputerChoice = "";
 
 function getRandomElement(arr) {
     const index = Math.floor(Math.random() * arr.length)
@@ -22,6 +23,7 @@ function getRandomElement(arr) {
 function playRound(playerChoice){
 
   const computerChoice = getRandomElement(options)
+   lastComputerChoice = computerChoice;
 
   if(playerChoice === computerChoice){
     resultText.textContent = "Нічія";
@@ -48,7 +50,15 @@ function playRound(playerChoice){
 
   computerText.textContent = `Компютер - ${computer}`
   playerText.textContent = `Ви - ${player}`
+
+  computerButton.textContent = "Варіант комп’ютера";
 }
+
+computerButton.addEventListener("click", () => {
+    if(lastComputerChoice){
+        computerButton.textContent = `Комп’ютер обрав: ${lastComputerChoice}`;
+    }
+});
 
 
 stoneRef.addEventListener("click", () => playRound("stone"))
