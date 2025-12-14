@@ -1,1 +1,25 @@
 @use "../base/variable" as *;
+
+
+
+
+.googledino{
+    padding-top: 36px;
+}
+.googledino__title{
+    font-family: "Montserrat Alternates";
+    color: #000;
+    width: 386px;
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.googledino__line{
+    margin: 36px auto 0;
+    width: 536px;
+    height: 1px;
+    background-color: #000;
+}
+
