@@ -7,8 +7,8 @@
     <title>Vanilla App Template</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <script type="module" crossorigin src="/Vite_vanilla-app-template/assets/index-8f1d819c.js"></script>
-    <link rel="stylesheet" href="/Vite_vanilla-app-template/assets/index-ff80e12f.css">
+    <script type="module" crossorigin src="/Vite_vanilla-app-template/assets/index-32a73d6a.js"></script>
+    <link rel="stylesheet" href="/Vite_vanilla-app-template/assets/index-54eb74d0.css">
   </head>
   <body>
  
@@ -124,8 +124,33 @@
 
     </div>
 </section>
-    
-    
+        <section class="calculatetime">
+  <div class="container calculatetime__div">
+    <h2 class="calculatetime__title">Калькулятор часу</h2>
+    <div class="calculatetime__search-row">
+      <div class="calculatetime__search">
+        <input class="calculatetime__input" id="numInput" type="text" placeholder="Введіть число">
+        <button class="calculatetime__btn" id="searchBtn" type="submit"><svg class="calculatetime__icon" width="20" height="20" viewBox="0 0 24 24"><path fill="white" d="M10 2a8 8 0 105.293 14.293l4.707 4.707 1.414-1.414-4.707-4.707A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"/></svg></button>
+      </div>
+      <div class="calculatetime__separator"></div>
+      <div class="calculatetime__timer" id="time">00:00</div>
+    </div>
+    <div class="calculatetime__line"></div>
+  </div>
+</section>
+    <section class="dino" id="dino">
+  <div class="container">
+    <div class="dino__border"></div>
+    <h3 class="dino__title">Google динозавр</h3>
+    <p class="dino__points"><span id="points">00000</span></p>
+    <div class="dino__game">
+      <div class="dino__dino"></div>
+      <div class="dino__cactus"></div>
+    </div>
+    <p class="dino__text"></p>
+    <button class="dino__start">Старт</button>
+  </div>
+</section>
     <section class="football-section">
   <h2 class="football-title">Футбол</h2>
   <div id="football-field">
