@@ -16,7 +16,7 @@ ball.style.top = `${y}px`;
 let vx = 0; // velocity x
 let vy = 0; // velocity y
 const speed = 8; // how fast the kick is
-const friction = 0.95; // slows down over time (remove if you want no slowdown)
+const friction = 0.95; // slows down over time
 
 field.addEventListener('click', (event) => {
   const rect = field.getBoundingClientRect();
