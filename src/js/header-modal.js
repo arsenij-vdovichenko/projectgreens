@@ -15,4 +15,11 @@ imgRef.addEventListener("click", () => {
 
 btnRef.addEventListener("click", () => {
     spanRef.textContent = inputRef.value;
+    modalRef.style.display = "none"
 });
+
+modalRef.addEventListener("click", (event)=>{
+    if(event.target === modalRef){
+        modalRef.style.display = "none"
+    }
+})
