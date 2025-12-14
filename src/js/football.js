@@ -13,25 +13,69 @@ let score = 0;
 ball.style.left = `${x}px`;
 ball.style.top = `${y}px`;
 
-document.addEventListener('keydown', event => {
-  if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.key)) {
-    event.preventDefault();
+let vx = 0; // velocity x
+let vy = 0; // velocity y
+const speed = 8; // how fast the kick is
+const friction = 0.95; // slows down over time (remove if you want no slowdown)
 
-    const moves = {
-      ArrowUp: () => (y = Math.max(0, y - 10)),
-      ArrowDown: () => (y = Math.min(field.offsetHeight, y + 10)),
-      ArrowLeft: () => (x = Math.max(0, x - 10)),
-      ArrowRight: () =>
-        (x = Math.min(field.offsetWidth - ball.offsetWidth, x + 10)),
-    };
+field.addEventListener('click', (event) => {
+  const rect = field.getBoundingClientRect();
+  const clickX = event.clientX - rect.left;
+  const clickY = event.clientY - rect.top;
 
-    moves[event.key]?.();
+  // Current ball center
+  const ballCenterX = x + ball.offsetWidth / 2;
+  const ballCenterY = y + ball.offsetHeight / 2;
 
-    ball.style.left = `${x}px`;
-    ball.style.top = `${y}px`;
-    checkGoal();
+  // Direction vector from ball to click
+  const dx = clickX - ballCenterX;
+  const dy = clickY - ballCenterY;
+
+  // Distance (to normalize)
+  const distance = Math.sqrt(dx * dx + dy * dy);
+
+  if (distance > 5) { // avoid tiny accidental kicks
+    // Set velocity in that direction
+    vx = (dx / distance) * speed;
+    vy = (dy / distance) * speed;
   }
 });
+
+// Animation loop to move the ball continuously
+function animate() {
+  // Apply velocity
+  x += vx;
+  y += vy;
+
+  // Apply friction (slow down gradually)
+  vx *= friction;
+  vy *= friction;
+
+  // Stop if almost stopped
+  if (Math.abs(vx) < 0.1) vx = 0;
+  if (Math.abs(vy) < 0.1) vy = 0;
+
+  // Bounce off walls (optional — comment out if you don't want bounce)
+  if (x <= 0 || x >= field.offsetWidth - ball.offsetWidth) {
+    vx = -vx * 0.8; // lose some energy on bounce
+    x = Math.max(0, Math.min(field.offsetWidth - ball.offsetWidth, x));
+  }
+  if (y <= 0 || y >= field.offsetHeight - ball.offsetHeight) {
+    vy = -vy * 0.8;
+    y = Math.max(0, Math.min(field.offsetHeight - ball.offsetHeight, y));
+  }
+
+  // Update position
+  ball.style.left = `${x}px`;
+  ball.style.top = `${y}px`;
+
+  // Check for goal every frame
+  checkGoal();
+
+  requestAnimationFrame(animate);
+}
+
+animate(); // start the loop
 
 function checkGoal() {
   const centerYBall = y + ball.offsetHeight / 2;
