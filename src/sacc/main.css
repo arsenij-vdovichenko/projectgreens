@@ -47,6 +47,7 @@ button {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 8px;
+  outline: 1px solid rgb(255, 0, 0);
 }
 
 .header {
@@ -449,6 +450,237 @@ button {
   margin-right: 58px;
 }
 
+.calculatetime {
+  padding-top: 36px;
+}
+
+.calculatetime__title {
+  text-align: center;
+  font-family: "Montserrat Alternates";
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.calculatetime__search-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  width: 520px;
+  margin: 0 auto;
+}
+
+.calculatetime__search {
+  position: relative;
+  background: #E6E6E6;
+  border-radius: 30px;
+  height: 48px;
+  width: 300px;
+}
+
+.calculatetime__input {
+  position: absolute;
+  left: 20px;
+  right: 48px;
+  top: 0;
+  bottom: 0;
+  border: none;
+  background: transparent;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  color: #7E7E7E;
+  outline: none;
+}
+
+.calculatetime__btn {
+  position: absolute;
+  top: 5.9px;
+  right: 0;
+  width: 48px;
+  height: 48px;
+  border: none;
+  background: #000;
+  border-radius: 0 30px 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculatetime__icon {
+  width: 22px;
+  height: 22px;
+  fill: white;
+}
+
+.calculatetime__separator {
+  width: 140px;
+  height: 1px;
+  border-bottom: 1px dashed #000;
+}
+
+.calculatetime__timer {
+  font-family: "Montserrat Alternates";
+  font-size: 18px;
+  color: #000;
+  white-space: nowrap;
+}
+
+.calculatetime__line {
+  margin: 36px auto 0;
+  width: 536px;
+  height: 1px;
+  background-color: #000;
+}
+
+.dino {
+  text-align: center;
+}
+.dino .container {
+  padding: 36px 0;
+  position: relative;
+}
+.dino__border {
+  height: 1.5px;
+  background-color: black;
+  width: 550px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.dino__title {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+.dino__text {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #039900;
+}
+.dino__start {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  color: #fff;
+  background-color: #000;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
+.dino__start:hover {
+  background-color: #222;
+}
+.dino__game {
+  animation: moveMain 2s linear infinite;
+  z-index: 1;
+  position: relative;
+  margin: 0 auto;
+  width: 720px;
+  height: 241px;
+  background-image: url(../img/ground.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: 420px 10px;
+  overflow: hidden;
+}
+.dino__game.ground-animate {
+  animation: groundMove 2s linear infinite;
+}
+.dino__dino {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  background-image: url(../img/dino.png);
+  background-size: cover;
+}
+.dino__dino.jump {
+  animation: jump 0.65s linear;
+}
+.dino__cactus {
+  width: 15px;
+  height: 40px;
+  position: absolute;
+  bottom: -10px;
+  right: -50px;
+  background-image: url(../img/cactus.webp);
+  background-repeat: no-repeat;
+  background-size: 15px 25px;
+  transform: scale(2);
+}
+.dino__points {
+  position: absolute;
+  left: 70%;
+  top: 100px;
+  color: #535353;
+  font-size: 14px;
+  font-family: "Press Start 2P";
+  font-weight: 400;
+}
+
+body.dark-mode .dino__dino {
+  background-image: url(../img/white-dino.png);
+}
+body.dark-mode .dino__cactus {
+  background-image: url(../img/white-cactus.webp);
+  bottom: -10px;
+  transform: scale(2);
+}
+
+@keyframes groundMove {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -720px;
+  }
+}
+@keyframes jump {
+  0% {
+    bottom: 10px;
+  }
+  20% {
+    bottom: 60px;
+  }
+  40% {
+    bottom: 100px;
+  }
+  60% {
+    bottom: 120px;
+  }
+  80% {
+    bottom: 60px;
+  }
+  100% {
+    bottom: 10px;
+  }
+}
+@keyframes cactusMove {
+  0% {
+    right: -50px;
+  }
+  100% {
+    right: 720px;
+  }
+}
+.dino__points .blink {
+  animation: blink 0.3s steps(1) 2;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
 .football-section #football-field {
   width: 600px;
   height: 300px;
