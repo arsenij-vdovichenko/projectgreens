@@ -7,8 +7,8 @@
     <title>Vanilla App Template</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" href="./sacc/main.scss" /> -->
-    <script type="module" crossorigin src="/projectgreens/assets/index-0a2b22e8.js"></script>
-    <link rel="stylesheet" href="/projectgreens/assets/index-5b6ef2c7.css">
+    <script type="module" crossorigin src="/projectgreens/assets/index-20528969.js"></script>
+    <link rel="stylesheet" href="/projectgreens/assets/index-25bdce8c.css">
   </head>
   <body>
  
@@ -22,8 +22,9 @@
     <a href="" class="header__link">
         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAnCAYAAAB5XdqFAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAI5SURBVHgB7ZjfTeNAEId/yl0BuQ58D3m+dJB9zBt0gDvIXQUHFQAVeDqADggVAE+R8pJQAZAGzAw7K0wUkv0zCiDxSSM7y6z5sh7vbvwDtlxx3HMs8cmp4WW/BCL6d8vfHccQH0SlAZU4lZP5fN7MZjPXaZcvcdPJjeYnbDjkmOj5lOOEJYdt29a9Xm/Jn/scDccxxzkysBI905BRG6mYHMGiUz7ccfzmeEQmPdghcjKyjuNWzx8Hg8E1H/9zPMDf+onmJmElKlJSe384/knDarVyfOun8PUoU9Yv+FGvckStkBEbdT47jnY8Hh/BSy207dMhT32L12moxh7nVxmZKjJXymCx1iaiB5nXi0ZG5kFjFxX8aDZr7X28rc2FXs9s8g+S8s9PI/IPNfdgRx5pnolsV7KJ7NNofhWRSzCQzZEU5JbeJOQTCmRzJYeIL5EuhAzZXEmh1n4jpENIkC2RFC60by6ECNlSSeB1PS+BsEXWQtJp/wnKIWyQtZAUJni7bJZCWJNdaMMFyrhC3MqVQqj5l+sSyifdPmy+bJeNKyKhTNZp/yPYsLUcCfmyYVtXoZyoZ4aQJ7tpW5dD0oNNSJOtYi+8g6zZhxAvWyNuW7eNoimSECcbtnW5P9hM5nHCblmpzdxl02qxeYHwvmzuti70NZMMEDorRIewbI6QTlgRoyRjX+nU8JLLtXYH/5rmGulcat8T7AGLbV0UJa90HPyTfok9UCIa6jLntidTIvoEX7O3+OYL8gzSWdmGNbs0fgAAAABJRU5ErkJggg==" alt="" class="header__logo">
         <ul class="header__list">
-            <p class="header__coding">Coding</p>
-            <p class="header__magic">Magic</p>
+            <img src="../img/coding-magic.png" alt="coding-magic" class="header__img-coding-magic">
+            <!-- <p class="header__coding">Coding</p>
+            <p class="header__magic">Magic</p> -->
         </ul>
     </a>
 
@@ -60,29 +61,44 @@
     <section class="years">
     <div class="container">
     <h2 class="years__title">Перевір в який рік ти народився</h2>
-    <div class="years__box">
+ <div class="years__box">
 
-    <input type="text" placeholder="ведіть рік народження" class="years__input">
-    <button class="years__btn">
-        <img src="/projectgreens/assets/find-9ba5f54c.svg" alt="">
-    </button>
-    
-    <p class="years__text">Ви народилися у високосний рік!</p>
+    <div class="years__input-wrap">
+        <input
+            type="text"
+            placeholder="Введіть рік народження"
+            class="years__input"
+        >
+        <button class="years__btn" type="button">
+            <img src="/projectgreens/assets/find-9ba5f54c.svg" alt="">
+        </button>
     </div>
+
+    <p class="years__text">Ви народилися у високосний рік!</p>
+
+</div>
     </div>
 </section>
     <section class="guessnumbers">
     <div class="container">
-        <!-- <div class="guessnumbers__box"> -->
-        <h1 class="guessnumbers__title">Вгадай число, яке загадав комп’ютер</h1>
+
+        <h1 class="guessnumbers__title"> Вгадай число, яке загадав комп’ютер</h1>
+
         <div class="guessnumbers__boks">
-            <input type="text" placeholder="Введіть число" class="guessnumbers__input">
-            <button class="guessnumbers__btn">
-                <img src="/projectgreens/assets/find-9ba5f54c.svg" class="guessnumbers__img" alt="">
-            </button>
-            <p class="guessnumbers__text">Вітаю, ви вгадали число! (number)</p>  
+
+            <div class="guessnumbers__input-wrap">
+                <input type="text" placeholder="Введіть число" class="guessnumbers__input">
+                <button class="guessnumbers__btn" type="button">
+                    <img src="/projectgreens/assets/find-9ba5f54c.svg" class="guessnumbers__img" alt="Пошук"
+                    >
+                </button>
+            </div>
+
+
+            <p class="guessnumbers__text"> Вітаю, ви вгадали число! (number)</p>
+
         </div>
-        <!-- </div> -->
+
     </div>
 </section>
 
