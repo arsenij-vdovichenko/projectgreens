@@ -1,81 +1,84 @@
 @use "../base/variable" as *;
 
-.guessnumbers{
-    text-align: center; 
+.guessnumbers {
+    text-align: center;
     padding-top: 66px;
 
-    &__boks{
-        display: flex;
-        align-items: center;      
-        justify-content: center;  
-        gap: 15px;     
-        margin-top: 36px;           
-    }
-
-    &__title{
+    &__title {
         color: #000;
         font-family: "Montserrat Alternates";
         font-weight: 400;
-        position: relative;
         font-size: 16px;
+        position: relative;
 
         &::after {
             content: '';
             position: absolute;
-            bottom: 0;
             left: 50%;
+            top: 145px;
             transform: translateX(-50%);
             width: 536px;
             height: 1px;
             background-color: #000;
-            top: 145px;
         }
-    }   
+    }
 
-    &__box{
+    &__boks {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 10px;
-        position: relative;
+        gap: 202px;
+        margin-top: 36px;
     }
-    
-    &__text{
-        color: #039900;
-        font-family: "Montserrat Alternates";
-        font-weight: 400;
-        text-align: center;
-        margin: 0;
-    }  
+
+    &__input-wrap {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
 
     &__input {
-        height: 35px;
-        padding: 10px;
+        height: 30px;
+        padding: 9px 45px 9px 12px; 
         border-radius: 20px;
         background: #D7D7D7;
         border: none;
-        box-shadow: 0 8px 25px rgba(70, 70, 70, 0.4); 
-        transition: all 0.3s ease;
-
-        &::placeholder{
+        box-shadow: 0 8px 25px rgba(70, 70, 70, 0.4);
+        font-family: "Montserrat Alternates";
+        outline: none;
+        &::placeholder {
             color: #7E7E7E;
-            font-family: "Montserrat Alternates";
             font-weight: 400;
         }
     }
 
-    &__btn{
-        width: 48px;
-        height: 48px;
-        border: none;
-        background: #000;
-        border-radius: 0 30px 30px 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    &__btn {
+    position: absolute;
+    right: 0;
+    width: 48px;
+    // left: 207px;
+    bottom: 6px;
+    height: 48px;
+    border: none;
+    background: #000;
+    border-radius: 0 30px 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0.1px;
     }
 
-    // &__box{
-    //     margin-top: 36px;
-    // }
+    &__img {
+        width: 100%;
+
+        // pointer-events: none; 
+    }
+
+    &__text {
+        margin: 0;
+        font-family: "Montserrat Alternates";
+        font-weight: 400;
+        text-align: center;
+        // margin-left: 202px;
+    }
 }

@@ -49,6 +49,12 @@
     margin: 0;
   }
 
+  &__img-coding-magic{
+    width: 44px;
+    height: 35px;
+
+  }
+
   .nav {
     &__list {
       display: flex;
@@ -61,13 +67,12 @@
 
     &__item {
       & .link {
-        width: 97.0px;
-        height: 15.0px;
+       
         color: #000;
-        border-radius: 20px;
+        // border-radius: 20px;
         transition: all 0.3s ease;       
         font-family: "Montserrat Alternates";
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 400;
         line-height: normal;
 
