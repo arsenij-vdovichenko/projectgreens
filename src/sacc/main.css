@@ -91,6 +91,10 @@ button {
   color: #000;
   margin: 0;
 }
+.header__img-coding-magic {
+  width: 44px;
+  height: 35px;
+}
 .header .nav__list {
   display: flex;
   gap: 40px;
@@ -100,13 +104,10 @@ button {
   margin-left: 81px;
 }
 .header .nav__item .link {
-  width: 97px;
-  height: 15px;
   color: #000;
-  border-radius: 20px;
   transition: all 0.3s ease;
   font-family: "Montserrat Alternates";
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   line-height: normal;
 }
@@ -232,23 +233,21 @@ button {
   position: relative;
 }
 .years__input {
-  width: 260px;
-  height: 35px;
-  padding: 10px;
+  height: 30px;
+  padding: 9px 45px 9px 12px;
   border-radius: 20px;
   background: #D7D7D7;
   border: none;
   box-shadow: 0 8px 25px rgba(70, 70, 70, 0.4);
-  transition: all 0.3s ease;
+  font-family: "Montserrat Alternates";
+  outline: none;
 }
 .years__input::-moz-placeholder {
   color: #7E7E7E;
-  font-family: "Montserrat Alternates";
   font-weight: 400;
 }
 .years__input::placeholder {
   color: #7E7E7E;
-  font-family: "Montserrat Alternates";
   font-weight: 400;
 }
 .years__text {
@@ -259,9 +258,9 @@ button {
 }
 .years__btn {
   position: absolute;
-  top: 5.9px;
   right: 0;
   width: 48px;
+  bottom: 6px;
   height: 48px;
   border: none;
   background: #000;
@@ -269,72 +268,69 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  top: 0.5px;
+}
+.years__input-wrap {
+  position: relative;
+  width: 260px;
 }
 
 .guessnumbers {
   text-align: center;
   padding-top: 66px;
 }
-.guessnumbers__boks {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 36px;
-}
 .guessnumbers__title {
   color: #000;
   font-family: "Montserrat Alternates";
   font-weight: 400;
-  position: relative;
   font-size: 16px;
+  position: relative;
 }
 .guessnumbers__title::after {
   content: "";
   position: absolute;
-  bottom: 0;
   left: 50%;
+  top: 145px;
   transform: translateX(-50%);
   width: 536px;
   height: 1px;
   background-color: #000;
-  top: 145px;
 }
-.guessnumbers__box {
+.guessnumbers__boks {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  position: relative;
+  gap: 202px;
+  margin-top: 36px;
 }
-.guessnumbers__text {
-  color: #039900;
-  font-family: "Montserrat Alternates";
-  font-weight: 400;
-  text-align: center;
-  margin: 0;
+.guessnumbers__input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 .guessnumbers__input {
-  height: 35px;
-  padding: 10px;
+  height: 30px;
+  padding: 9px 45px 9px 12px;
   border-radius: 20px;
   background: #D7D7D7;
   border: none;
   box-shadow: 0 8px 25px rgba(70, 70, 70, 0.4);
-  transition: all 0.3s ease;
+  font-family: "Montserrat Alternates";
+  outline: none;
 }
 .guessnumbers__input::-moz-placeholder {
   color: #7E7E7E;
-  font-family: "Montserrat Alternates";
   font-weight: 400;
 }
 .guessnumbers__input::placeholder {
   color: #7E7E7E;
-  font-family: "Montserrat Alternates";
   font-weight: 400;
 }
 .guessnumbers__btn {
+  position: absolute;
+  right: 0;
   width: 48px;
+  bottom: 6px;
   height: 48px;
   border: none;
   background: #000;
@@ -342,6 +338,16 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  top: 0.1px;
+}
+.guessnumbers__img {
+  width: 100%;
+}
+.guessnumbers__text {
+  margin: 0;
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  text-align: center;
 }
 
 .paper {

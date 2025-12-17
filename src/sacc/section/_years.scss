@@ -34,20 +34,18 @@
         position: relative;
     }
 
-    &__input {
-        width: 260px;
-        height: 35px;
-        padding: 10px;
+&__input {
+        height: 30px;
+        padding: 9px 45px 9px 12px; 
         border-radius: 20px;
         background: #D7D7D7;
         border: none;
-        box-shadow: 0 8px 25px rgba(70, 70, 70, 0.4); 
-        transition: all 0.3s ease;
-
-        &::placeholder{
-        color: #7E7E7E;
+        box-shadow: 0 8px 25px rgba(70, 70, 70, 0.4);
         font-family: "Montserrat Alternates";
-        font-weight: 400;
+        outline: none;
+        &::placeholder {
+            color: #7E7E7E;
+            font-weight: 400;
         }
     }
 
@@ -60,10 +58,11 @@
     }
 
     &__btn{
-      position: absolute;
-    top: 5.9px; 
+       position: absolute;
     right: 0;
     width: 48px;
+    // left: 207px;
+    bottom: 6px;
     height: 48px;
     border: none;
     background: #000;
@@ -71,5 +70,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    top: 0.5px;
+        // pointer-events: none; 
+    }
+
+    
+    &__input-wrap {
+        position: relative;
+        width: 260px; 
     }
 }
