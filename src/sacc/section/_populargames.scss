@@ -1,8 +1,12 @@
 @use "../base/variable" as *;
 
 .popular__games {
-  padding-top: 60px;
-
+  // padding-top: 60px;
+  
+  .container{
+    background-color: #fff;
+    margin-top: 60px;
+  }
 
   &__box {
     display: flex;
