@@ -7,8 +7,8 @@
     <title>Vanilla App Template</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" href="./sacc/main.scss" /> -->
-    <script type="module" crossorigin src="/projectgreens/assets/index-e9eba0d5.js"></script>
-    <link rel="stylesheet" href="/projectgreens/assets/index-bc6ac8c6.css">
+    <script type="module" crossorigin src="/projectgreens/assets/index-f3ce28a9.js"></script>
+    <link rel="stylesheet" href="/projectgreens/assets/index-f40e67bb.css">
   </head>
   <body>
  
@@ -171,6 +171,7 @@
     <h3 class="dino__title">Google динозавр</h3>
     <p class="dino__points"><span id="points">00000</span></p>
     <div class="dino__game">
+      <!-- <img src="../img/dino.png" alt=""> -->
       <div class="dino__dino"></div>
       <div class="dino__cactus"></div>
     </div>
@@ -279,7 +280,7 @@
         </ul>
         <div class="footer__subscribe">
             <input type="email" placeholder="Ваша ел. адреса..." class="footer__input">
-            <button class="footer__btn">Підписатись</button>
+            <button class="footer__btn" id="subscribeBtn">Підписатись</button>
             <p class="footer__note">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
         </div>
     </div>
@@ -322,7 +323,22 @@
 
         </div>
     </section>
-    
+    <div class="modal" id="modal">
+  <div class="modal__content">
+
+    <button class="modal__close" id="closeModal">✕</button>
+
+    <div class="modal__icons">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFWSURBVHgB7Za9TsMwFIUPENLCzsAD8ChMbIgNQSVegRmJhZ+XYGtp4ZUQRcxMTAhIKu6R71VNlLZpamdoe6RTy07kL+faTgOsmjYQR3fi78LYlvhW/MVOgvAaiT/FmfYZble8o/0r/mwirAh9F++p98WX4lQfJLcbQ4INeqAQVvNU/CC+gKtCcBH6hvHSse3oA5zDre+H+BoBVQWK0GBChxWgbH/ENwigqknZvur9a2ipePDb4iMPMs+aDlET2oLbEDz0J2iovIlO+Az3ErCXQ7SkprZO+ije1slzhaWxoCYr9VMBfh8TStk6ZwX4SOFpTCgT91CevKP9YOfUhw7g/sEmlf0lJtRUBif0GAt+UEyD2vUu/q/5GVzyQ9RUFehAr/vJ++JfHastJunOgNpOtt2eeWO1RFgf40TToKYECyYtg7RmQIPLh/Wagvpwlj1vEurDl1N/Z0CIWXCsSbEAAAAASUVORK5CYII=" alt="">
+      <img src="./img/code.png" alt="">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH6SURBVHgBzZY9LARBFMffOZ8RJBoanYJCRBQalUoUFIIQEURCoidH4k6nUqs0PhIKiUYtKoUoNRKKI6EQIs4R3Po/M5vMzd6c27lb55/8srtv5+vNe/N2iQqnMGgFd+ADxEEbKKWA1QUc0CSfm+VzBwWsFGjUbA0gSQHL8WO33f9qMKIMmpT3teBZaVclr+OgTLEnbCdeBP3gXLHtkNe7CrANehQbL3KOLBUFMbKXU0JFUraJQ4b7QCfmifZIxIzhOOn5wIk0TaJo/LYw9/0A6DVNzI0SJJIgJHkFD0r7NxKZ2g1OZXuTE2wfkg7MS1KZGnIFilO6F9z5BrQoiwsp95vghMyeOxn6eRSV6IqBFTLLVED46GzpRo7bKKjU7GNgVXnmVfK5PQBTip13YpfE1ptUAx51Iw/I+72hTX4PIlq7dVCn2drBEXgBw6CTvJ7zxFzNwqTF1rRF2cTbxzHdB09yDFPseFeWZRu+LlEeBYS/OvzdZU9n5OAmB9jLNRLHrx6Uuy9sPC5KyeQ+Bfmr8OMxJwhn6DtYIHs5IcqeGKrY00NwDW5JxM1WP9ntx2O1AuUlmxi7u/SnE1+SOIdhSl+Ilfys3vX2GEyAMzBLFvJ7LBzZZxD0gSvy/tLmJJsYf5EolZPggiz1L/+5ctEnWapUds7neETIQt8O7GgM7G8fuwAAAABJRU5ErkJggg==" alt="">
+      <img src="./img/game.png" alt="">
+    </div>
+
+    <h2 class="modal__title">Дякую за підписку!</h2>
+
+  </div>
+</div>
     
     
 
