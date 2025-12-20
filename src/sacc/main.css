@@ -50,10 +50,17 @@ button {
   outline: 1px solid rgb(255, 0, 0);
 }
 
+body {
+  background-image: url(../img/fon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .header {
   background-color: white;
   border-bottom: 1px solid #e0e0e0;
-  padding: 15px 0;
+  padding-top: 21px;
 }
 .header .container {
   display: flex;
@@ -170,8 +177,9 @@ button {
   background-color: gray;
 }
 
-.popular__games {
-  padding-top: 60px;
+.popular__games .container {
+  background-color: #fff;
+  margin-top: 60px;
 }
 .popular__games__box {
   display: flex;
@@ -490,6 +498,7 @@ button {
 
 .calculatetime {
   padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 .calculatetime__title {
@@ -533,7 +542,7 @@ button {
 
 .calculatetime__btn {
   position: absolute;
-  top: 5.9px;
+  top: 0px;
   right: 0;
   width: 48px;
   height: 48px;
@@ -564,18 +573,11 @@ button {
   white-space: nowrap;
 }
 
-.calculatetime__line {
-  margin: 36px auto 0;
-  width: 536px;
-  height: 1px;
-  background-color: #000;
-}
-
 .dino {
   text-align: center;
+  padding-bottom: 36px;
 }
 .dino .container {
-  padding: 36px 0;
   position: relative;
 }
 .dino__border {
@@ -587,10 +589,11 @@ button {
   margin-right: auto;
 }
 .dino__title {
+  margin-top: 36px;
   color: #000;
   font-family: "Montserrat Alternates";
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 28px;
+  font-weight: 600;
   text-align: center;
 }
 .dino__text {
@@ -834,6 +837,85 @@ body.dark-mode .dino__cactus {
   grid-column: 1/-1;
   display: flex;
   justify-content: center;
+}
+
+.footer {
+  padding: 30px 0;
+  background: #f8f8f8;
+}
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 185px;
+  padding-left: auto;
+}
+.footer__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #000;
+}
+.footer__logo {
+  width: 80px;
+  height: auto;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.footer__coding {
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer__magic {
+  font-size: 22px;
+  font-weight: 300;
+}
+.footer__contact {
+  padding: 0;
+  margin: 0;
+}
+.footer__item {
+  font-size: 12px;
+  margin-bottom: 5px;
+  font-family: "Montserrat Alternates";
+}
+.footer__item a {
+  color: #000;
+}
+.footer__subscribe {
+  display: flex;
+  align-items: center;
+  margin-top: 36px;
+  margin-bottom: 4px;
+  max-width: 220px;
+}
+.footer__input {
+  padding: 8px 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  margin-right: 36px;
+  margin-bottom: 18px;
+}
+.footer__btn {
+  padding: 8px;
+  border-radius: 20px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 18px;
+}
+.footer__note {
+  color: #555;
+  font-family: "Montserrat Alternates";
+  font-size: 6px;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .header-modal {

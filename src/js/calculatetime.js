@@ -1,17 +1,23 @@
-const btnRef = document.querySelector("#searchBtn")
+const btnRef = document.querySelector("#searchBtn");
+const inputRef = document.querySelector("#numInput");
+const timeRef = document.querySelector("#time");
 
+btnRef.addEventListener("click", () => {
+  const totalMinutes = parseInt(inputRef.value.trim());
 
-
-btnRef.addEventListener("click", (e) => {
-  const inputRef = document.querySelector("#numInput").value.trim();
-  const minutesRef = parseInt(inputRef);
-
-  if (isNaN(minutesRef) || minutesRef < 0) {
+  if (isNaN(totalMinutes) || totalMinutes < 0) {
     alert("Введіть коректне число хвилин!");
     return;
   }
 
-  const hours = Math.floor(minutesRef / 60);
-  const mins = minutesRef % 60;
-  document.querySelector("#time").textContent = `${hours}:${mins}`;
+  const days = Math.floor(totalMinutes / 1440);
+  const restMinutes = totalMinutes % 1440;
+
+  const hours = Math.floor(restMinutes / 60);
+  const minutes = restMinutes % 60;
+
+  const hh = String(hours).padStart(2, "0");
+  const mm = String(minutes).padStart(2, "0");
+
+  timeRef.textContent = `${days} дн. ${hh}:${mm}`;
 });
