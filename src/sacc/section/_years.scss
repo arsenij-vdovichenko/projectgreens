@@ -28,13 +28,14 @@
         margin-top: 20px;
         display: flex;
         align-items: center;
-        gap: 149px;
-        justify-content: center;
+        // gap: 149px;
+        justify-content: space-around;
         margin-top: 46px;
         position: relative;
     }
 
 &__input {
+        width: 200px;
         height: 30px;
         padding: 9px 45px 9px 12px; 
         border-radius: 20px;
@@ -59,7 +60,7 @@
 
     &__btn{
        position: absolute;
-    right: 0;
+    right: -3px;
     width: 48px;
     // left: 207px;
     bottom: 6px;
@@ -70,7 +71,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 0.5px;
+    top: -0.1px;
         // pointer-events: none; 
     }
 
