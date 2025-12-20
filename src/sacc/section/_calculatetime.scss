@@ -4,6 +4,7 @@
 
 .calculatetime{
   padding-top: 36px;
+  padding-bottom: 36px;
 }
 .calculatetime__title{
   text-align: center;
@@ -47,7 +48,7 @@
 
 .calculatetime__btn{
   position: absolute;
-  top: 5.9px;
+  top: 0px;
   right: 0;
   width: 48px;
   height: 48px;
@@ -75,10 +76,4 @@
   font-size: 18px;
   color: #000;
   white-space: nowrap;
-}
-.calculatetime__line{
-  margin: 36px auto 0;
-  width: 536px;
-  height: 1px;
-  background-color: #000;
 }
