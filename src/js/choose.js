@@ -109,7 +109,6 @@ buttonsRef.forEach(btn => {
                 <h2 class="choose__name">Сума прожитих років:</h2>
                 <p class="choose__born">${totalYears} років</p>
             </li>`;
-        createItemsWorkUp(totalYears);
         break;
 
       case 'alphabet':
@@ -143,7 +142,6 @@ buttonsRef.forEach(btn => {
                 <p class="choose__born">Народився: ${einstein.born}</p>
             </li>
         `;
-        createItemsWorkUp(einstein)
         break;
       case 'letterC':
         const cName = scientists.filter(item => item.surname.startsWith("C"));
@@ -176,7 +174,6 @@ buttonsRef.forEach(btn => {
                 <p class="choose__born">${worked19 ? "Так" : "Ні"}</p>
             </li>
         `;
-        createItemsWorkUp(worked19);
         break;
     }
   });
