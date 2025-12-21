@@ -1097,18 +1097,15 @@ body {
 
 .modal__content {
   position: relative;
-<<<<<<< HEAD
-<<<<<<< HEAD
+
   width: 463px;
   height: 245px;
-=======
   width: 600px;
   max-width: 90%;
->>>>>>> 1c32f6ee608a1a703c2915a6d76e0c81680131fb
-=======
   width: 600px;
   max-width: 90%;
->>>>>>> 1c32f6ee608a1a703c2915a6d76e0c81680131fb
+  width: 600px;
+  max-width: 90%;
   padding: 60px 40px;
   background: #fff;
   border-radius: 30px;
@@ -1132,8 +1129,6 @@ body {
 }
 
 .modal__title {
-<<<<<<< HEAD
-<<<<<<< HEAD
   color: #000;
   text-align: center;
   font-family: Inter;
@@ -1144,21 +1139,17 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -120%);
-=======
   font-size: 28px;
   margin-top: 40px;
->>>>>>> 1c32f6ee608a1a703c2915a6d76e0c81680131fb
-=======
   font-size: 28px;
   margin-top: 40px;
->>>>>>> 1c32f6ee608a1a703c2915a6d76e0c81680131fb
+  font-size: 28px;
+  margin-top: 40px;
 }
 
 .modal__icons {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-<<<<<<< HEAD
-<<<<<<< HEAD
   gap: 46px;
   justify-items: center;
 }
@@ -1174,9 +1165,6 @@ body {
 .modal__icons img {
   width: 30px;
   height: 30px;
-=======
-=======
->>>>>>> 1c32f6ee608a1a703c2915a6d76e0c81680131fb
   gap: 40px;
   justify-items: center;
 }
@@ -1184,10 +1172,6 @@ body {
 .modal__icons img {
   width: 50px;
   height: 50px;
-<<<<<<< HEAD
->>>>>>> 1c32f6ee608a1a703c2915a6d76e0c81680131fb
-=======
->>>>>>> 1c32f6ee608a1a703c2915a6d76e0c81680131fb
   transition: transform 0.3s ease;
 }
 
