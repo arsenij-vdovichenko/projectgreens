@@ -140,21 +140,21 @@ body{
   }
 
 
-    #hellow__btn {
-      &:checked {
-        & ~ .hellow__label {
-          & .hellow__sun {
-            opacity: 0;
-            transform: rotate(90deg);
-          }
+    // #hellow__btn {
+    //   &:checked {
+    //     & ~ .hellow__label {
+    //       & .hellow__sun {
+    //         opacity: 0;
+    //         transform: rotate(90deg);
+    //       }
 
-          & .hellow__monthn {
-            opacity: 1;
-            transform: rotate(0deg);
-          }
-        }
-      }
-    }
+    //       & .hellow__monthn {
+    //         opacity: 1;
+    //         transform: rotate(0deg);
+    //       }
+    //     }
+    //   }
+    // }
 
     
   }
