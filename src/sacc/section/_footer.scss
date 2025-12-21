@@ -8,8 +8,8 @@
         display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 185px;
-    padding-left: auto;
+    // padding-right: 185px;
+    // padding-left: auto;
     }
 
     &__link{
@@ -42,8 +42,8 @@
   }
 
   &__contact {
-    padding: 0;
-    margin: 0;
+    margin-left: 230px;
+    margin-right: 230px;
   }
 
    &__item {
@@ -58,10 +58,10 @@
 
    &__subscribe {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap ;
     margin-top: 36px;
     margin-bottom: 4px;
-    max-width: 220px;
+    // max-width: 220px;
   }
 
 
@@ -69,7 +69,6 @@
     padding: 8px 10px;
     border-radius: 20px;
     border: 1px solid #ccc;
-    outline: none;
     margin-right: 36px;
     margin-bottom: 18px;
   }
@@ -88,12 +87,8 @@
   &__note {
     color: #555;
     font-family: "Montserrat Alternates";
-    font-size: 6px;
-font-style: normal;
+    font-size: 8px;
 font-weight: 400;
-    
   }
 
- 
-  
 }
