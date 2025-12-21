@@ -57,7 +57,7 @@
     margin: 0 auto;
     width: 720px;
     height: 241px;
-    background-image: url(../img/ground.png);
+    // background-image: url(/src/img/dino.png);
     background-repeat: repeat-x;
     background-position: bottom;
     background-size: 420px 10px;
@@ -67,33 +67,32 @@
       animation: groundMove 2s linear infinite;
     }
   }
-
   &__dino {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    bottom: 0;
-    left: 50px;
-    background-image: url(../img/dino.png);
-    background-size: cover;
+    width: 44px;
+  height: 47px;
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: contain;
 
     &.jump {
       animation: jump 0.65s linear;
     }
   }
-
   &__cactus {
-    width: 15px;
-    height: 40px;
-    position: absolute;
-    bottom: -10px;
-    right: -50px;
-    background-image: url(../img/cactus.webp);
-    background-repeat: no-repeat;
-    background-size: 15px 25px;
-    transform: scale(2);
-  }
+    width: 17px;
+  height: 35px;
+  position: absolute;
+  bottom: 0;
+  right: -40px;
 
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: contain;
+  }
   &__points {
     position: absolute;
     left: 70%;
@@ -105,17 +104,17 @@
   }
 }
 
-body.dark-mode {
-  .dino__dino {
-    background-image: url(../img/white-dino.png);
-  }
+// body.dark-mode {
+//   .dino__dino {
+//     background-image: url(../img/white-dino.png);
+//   }
 
-  .dino__cactus {
-    background-image: url(../img/white-cactus.webp);
-    bottom: -10px;
-    transform: scale(2);
-  }
-}
+//   .dino__cactus {
+//     background-image: url(../img/white-cactus.webp);
+//     bottom: -10px;
+//     transform: scale(2);
+//   }
+// }
 
 @keyframes groundMove {
   0% {

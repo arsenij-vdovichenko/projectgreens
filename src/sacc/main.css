@@ -178,7 +178,6 @@ body {
 }
 
 .popular__games .container {
-  background-color: #fff;
   margin-top: 60px;
 }
 .popular__games__box {
@@ -623,7 +622,6 @@ body {
   margin: 0 auto;
   width: 720px;
   height: 241px;
-  background-image: url(../img/ground.png);
   background-repeat: repeat-x;
   background-position: bottom;
   background-size: 420px 10px;
@@ -633,27 +631,27 @@ body {
   animation: groundMove 2s linear infinite;
 }
 .dino__dino {
-  width: 50px;
-  height: 50px;
+  width: 44px;
+  height: 47px;
   position: absolute;
   bottom: 0;
   left: 50px;
-  background-image: url(../img/dino.png);
-  background-size: cover;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .dino__dino.jump {
   animation: jump 0.65s linear;
 }
 .dino__cactus {
-  width: 15px;
-  height: 40px;
+  width: 17px;
+  height: 35px;
   position: absolute;
-  bottom: -10px;
-  right: -50px;
-  background-image: url(../img/cactus.webp);
+  bottom: 0;
+  right: -40px;
+  background-image: url("");
   background-repeat: no-repeat;
-  background-size: 15px 25px;
-  transform: scale(2);
+  background-size: contain;
 }
 .dino__points {
   position: absolute;
@@ -663,15 +661,6 @@ body {
   font-size: 14px;
   font-family: "Press Start 2P";
   font-weight: 400;
-}
-
-body.dark-mode .dino__dino {
-  background-image: url(../img/white-dino.png);
-}
-body.dark-mode .dino__cactus {
-  background-image: url(../img/white-cactus.webp);
-  bottom: -10px;
-  transform: scale(2);
 }
 
 @keyframes groundMove {
@@ -932,7 +921,7 @@ body.dark-mode .dino__cactus {
 }
 .header-modal__overlay {
   width: 576px;
-  height: 370px;
+  height: 335px;
   background: white;
   border-radius: 20px;
   position: relative;
@@ -943,7 +932,8 @@ body.dark-mode .dino__cactus {
 }
 .header-modal__hellow {
   text-align: center;
-  width: 100%;
+  width: 490px;
+  height: 60px;
 }
 .header-modal__decoret {
   width: 30px;
@@ -982,8 +972,8 @@ body.dark-mode .dino__cactus {
   width: 15px;
   height: 15px;
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 30px;
+  right: 30px;
   cursor: pointer;
 }
 .header-modal__form {
@@ -1029,13 +1019,78 @@ body.dark-mode .dino__cactus {
   font-size: 13px;
   font-weight: 400;
   padding: 10px 20px;
-  gap: 10px;
   border-radius: 20px;
   background: #000;
   width: 182px;
   height: 40px;
+  box-shadow: 5px 5px 16px rgba(0, 0, 0, 0.38);
 }
 .header-modal__box {
   display: flex;
   justify-content: space-between;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.modal.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal__content {
+  position: relative;
+  width: 600px;
+  max-width: 90%;
+  padding: 60px 40px;
+  background: #fff;
+  border-radius: 30px;
+  text-align: center;
+  transform: scale(0.7) translateY(50px);
+  transition: transform 0.4s ease;
+}
+
+.modal.active .modal__content {
+  transform: scale(1) translateY(0);
+}
+
+.modal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal__title {
+  font-size: 28px;
+  margin-top: 40px;
+}
+
+.modal__icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  justify-items: center;
+}
+
+.modal__icons img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.modal__icons img:hover {
+  transform: scale(1.2) rotate(5deg);
 }/*# sourceMappingURL=main.css.map */
