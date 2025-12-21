@@ -12,7 +12,7 @@
 
     &__overlay {
         width: 576px;
-        height: 370px;
+        height: 335px;
         background: white;
         border-radius: 20px;
         position: relative;
@@ -24,7 +24,9 @@
 
     &__hellow {
         text-align: center; 
-        width: 100%; 
+        width: 490px;
+        height: 60px;
+
     }
 
   
@@ -72,8 +74,8 @@
         width: 15px;
         height: 15px;
         position: absolute;
-        top: 15px;
-        right: 15px;
+        top: 30px;
+        right: 30px;
         cursor: pointer;
     }
 
@@ -119,11 +121,16 @@
         font-size: 13px;
         font-weight: 400;
         padding: 10px 20px;
-        gap: 10px;
+        // gap: 10px;
         border-radius: 20px;
         background: #000;
         width: 182.0px;
         height: 40.0px;
+        box-shadow: 5px 5px 16px rgba(0, 0, 0, 0.38);
+
+
+
+
     }
 
     &__box {

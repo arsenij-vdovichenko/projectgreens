@@ -1,9 +1,17 @@
 @use "../base/variable" as *;
 
+
+body{
+  background-image: url(../img/fon.png);
+ background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .header {
   background-color: white;
   border-bottom: 1px solid #e0e0e0;
-  padding: 15px 0;
+  padding-top: 21px;
 
   .container {
     display: flex;
@@ -49,6 +57,12 @@
     margin: 0;
   }
 
+  &__img-coding-magic{
+    width: 44px;
+    height: 35px;
+
+  }
+
   .nav {
     &__list {
       display: flex;
@@ -61,13 +75,12 @@
 
     &__item {
       & .link {
-        width: 97.0px;
-        height: 15.0px;
+       
         color: #000;
-        border-radius: 20px;
+        // border-radius: 20px;
         transition: all 0.3s ease;       
         font-family: "Montserrat Alternates";
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 400;
         line-height: normal;
 
@@ -127,24 +140,30 @@
   }
 
 
-    #hellow__btn {
-      &:checked {
-        & ~ .hellow__label {
-          & .hellow__sun {
-            opacity: 0;
-            transform: rotate(90deg);
-          }
+    // #hellow__btn {
+    //   &:checked {
+    //     & ~ .hellow__label {
+    //       & .hellow__sun {
+    //         opacity: 0;
+    //         transform: rotate(90deg);
+    //       }
 
-          & .hellow__monthn {
-            opacity: 1;
-            transform: rotate(0deg);
-          }
-        }
-      }
-    }
+    //       & .hellow__monthn {
+    //         opacity: 1;
+    //         transform: rotate(0deg);
+    //       }
+    //     }
+    //   }
+    // }
+
+    
   }
  
 } 
 .active{
     background-color: gray;
   }
+
+//   body.active p {
+//   color: #fff;
+// }

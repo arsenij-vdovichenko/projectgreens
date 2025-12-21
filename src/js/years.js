@@ -1,7 +1,9 @@
 const inputRef = document.querySelector(".years__input");
 const textRef = document.querySelector(".years__text");
+const btnRef = document.querySelector(".years__btn")
 
-inputRef.addEventListener("blur", () => {
+
+btnRef.addEventListener("click", () => {
      const year = Number(inputRef.value);
 
     if (!isNaN(year)) {

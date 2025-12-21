@@ -1,1 +1,68 @@
 @use "../base/variable" as *;
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.modal.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal__content {
+  position: relative;
+  width: 600px;
+  max-width: 90%;
+  padding: 60px 40px;
+  background: #fff;
+  border-radius: 30px;
+  text-align: center;
+
+  transform: scale(0.7) translateY(50px);
+  transition: transform 0.4s ease;
+}
+
+.modal.active .modal__content {
+  transform: scale(1) translateY(0);
+}
+
+.modal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal__title {
+  font-size: 28px;
+  margin-top: 40px;
+}
+
+.modal__icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  justify-items: center;
+}
+
+.modal__icons img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.modal__icons img:hover {
+  transform: scale(1.2) rotate(5deg);
+}

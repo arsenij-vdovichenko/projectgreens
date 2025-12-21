@@ -50,10 +50,17 @@ button {
   outline: 1px solid rgb(255, 0, 0);
 }
 
+body {
+  background-image: url(../img/fon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .header {
   background-color: white;
   border-bottom: 1px solid #e0e0e0;
-  padding: 15px 0;
+  padding-top: 21px;
 }
 .header .container {
   display: flex;
@@ -91,6 +98,10 @@ button {
   color: #000;
   margin: 0;
 }
+.header__img-coding-magic {
+  width: 44px;
+  height: 35px;
+}
 .header .nav__list {
   display: flex;
   gap: 40px;
@@ -100,13 +111,10 @@ button {
   margin-left: 81px;
 }
 .header .nav__item .link {
-  width: 97px;
-  height: 15px;
   color: #000;
-  border-radius: 20px;
   transition: all 0.3s ease;
   font-family: "Montserrat Alternates";
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   line-height: normal;
 }
@@ -226,28 +234,27 @@ button {
   margin-top: 20px;
   display: flex;
   align-items: center;
-  gap: 149px;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 46px;
+  position: relative;
 }
 .years__input {
-  width: 260px;
-  height: 35px;
-  padding: 10px;
+  width: 200px;
+  height: 30px;
+  padding: 9px 45px 9px 12px;
   border-radius: 20px;
   background: #D7D7D7;
   border: none;
   box-shadow: 0 8px 25px rgba(70, 70, 70, 0.4);
-  transition: all 0.3s ease;
+  font-family: "Montserrat Alternates";
+  outline: none;
 }
 .years__input::-moz-placeholder {
   color: #7E7E7E;
-  font-family: "Montserrat Alternates";
   font-weight: 400;
 }
 .years__input::placeholder {
   color: #7E7E7E;
-  font-family: "Montserrat Alternates";
   font-weight: 400;
 }
 .years__text {
@@ -255,6 +262,24 @@ button {
   font-family: "Montserrat Alternates";
   font-weight: 400;
   line-height: normal;
+}
+.years__btn {
+  position: absolute;
+  right: -3px;
+  width: 48px;
+  bottom: 6px;
+  height: 48px;
+  border: none;
+  background: #000;
+  border-radius: 0 30px 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -0.1px;
+}
+.years__input-wrap {
+  position: relative;
+  width: 260px;
 }
 
 .guessnumbers {
@@ -265,51 +290,71 @@ button {
   color: #000;
   font-family: "Montserrat Alternates";
   font-weight: 400;
-  position: relative;
   font-size: 16px;
+  position: relative;
 }
 .guessnumbers__title::after {
   content: "";
   position: absolute;
-  bottom: 0;
   left: 50%;
+  top: 145px;
   transform: translateX(-50%);
   width: 536px;
   height: 1px;
   background-color: #000;
-  top: 145px;
 }
-.guessnumbers__box {
+.guessnumbers__boks {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 36px;
-  gap: 202px;
 }
-.guessnumbers__text {
-  color: #039900;
-  font-family: "Montserrat Alternates";
-  font-weight: 400;
+.guessnumbers__input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 .guessnumbers__input {
   width: 150px;
-  height: 35px;
-  padding: 10px;
+  height: 30px;
+  padding: 9px 45px 9px 12px;
   border-radius: 20px;
   background: #D7D7D7;
   border: none;
   box-shadow: 0 8px 25px rgba(70, 70, 70, 0.4);
-  transition: all 0.3s ease;
+  font-family: "Montserrat Alternates";
+  outline: none;
 }
 .guessnumbers__input::-moz-placeholder {
   color: #7E7E7E;
-  font-family: "Montserrat Alternates";
   font-weight: 400;
 }
 .guessnumbers__input::placeholder {
   color: #7E7E7E;
+  font-weight: 400;
+}
+.guessnumbers__btn {
+  position: absolute;
+  right: -3px;
+  width: 48px;
+  bottom: 6px;
+  height: 48px;
+  border: none;
+  background: #000;
+  border-radius: 0 30px 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -0.1px;
+}
+.guessnumbers__img {
+  width: 100%;
+}
+.guessnumbers__text {
+  margin: 0;
   font-family: "Montserrat Alternates";
   font-weight: 400;
+  text-align: center;
 }
 
 .paper {
@@ -452,6 +497,7 @@ button {
 
 .calculatetime {
   padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 .calculatetime__title {
@@ -495,7 +541,7 @@ button {
 
 .calculatetime__btn {
   position: absolute;
-  top: 5.9px;
+  top: 0px;
   right: 0;
   width: 48px;
   height: 48px;
@@ -526,18 +572,11 @@ button {
   white-space: nowrap;
 }
 
-.calculatetime__line {
-  margin: 36px auto 0;
-  width: 536px;
-  height: 1px;
-  background-color: #000;
-}
-
 .dino {
   text-align: center;
+  padding-bottom: 36px;
 }
 .dino .container {
-  padding: 36px 0;
   position: relative;
 }
 .dino__border {
@@ -549,10 +588,11 @@ button {
   margin-right: auto;
 }
 .dino__title {
+  margin-top: 36px;
   color: #000;
   font-family: "Montserrat Alternates";
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 28px;
+  font-weight: 600;
   text-align: center;
 }
 .dino__text {
@@ -836,7 +876,7 @@ body.dark-mode .dino__cactus {
 }
 .header-modal__overlay {
   width: 576px;
-  height: 370px;
+  height: 335px;
   background: white;
   border-radius: 20px;
   position: relative;
@@ -847,7 +887,8 @@ body.dark-mode .dino__cactus {
 }
 .header-modal__hellow {
   text-align: center;
-  width: 100%;
+  width: 490px;
+  height: 60px;
 }
 .header-modal__decoret {
   width: 30px;
@@ -886,8 +927,8 @@ body.dark-mode .dino__cactus {
   width: 15px;
   height: 15px;
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 30px;
+  right: 30px;
   cursor: pointer;
 }
 .header-modal__form {
@@ -933,11 +974,11 @@ body.dark-mode .dino__cactus {
   font-size: 13px;
   font-weight: 400;
   padding: 10px 20px;
-  gap: 10px;
   border-radius: 20px;
   background: #000;
   width: 182px;
   height: 40px;
+  box-shadow: 5px 5px 16px rgba(0, 0, 0, 0.38);
 }
 .header-modal__box {
   display: flex;

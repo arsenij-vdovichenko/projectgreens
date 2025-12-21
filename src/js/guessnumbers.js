@@ -3,8 +3,9 @@ const textRef = document.querySelector(".guessnumbers__text")
 
 const computerNumber = Math.floor(Math.random() * 10) + 1;
 
+const imgRef = document.querySelector(".guessnumbers__img")
 
-inputRef.addEventListener("change", () => {
+imgRef.addEventListener("click", () => {
     const userNumber = Number(inputRef.value)
 
     if(!userNumber || userNumber < 1 || userNumber > 10){
@@ -20,4 +21,6 @@ inputRef.addEventListener("change", () => {
         textRef.textContent = `ви програли компютер загадав ${computerNumber}`
         textRef.style.color = "red"
     }
+
+     inputRef.value = "";
 })
