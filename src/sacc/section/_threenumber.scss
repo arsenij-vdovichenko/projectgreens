@@ -1,1 +1,13 @@
-@use "../base/variable" as *;
+@use '../base/variable' as *;
+
+.threenumber-section {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid black;
+  gap: 20px;
+  border-radius: 20px;
+  height: 32vh;
+}
