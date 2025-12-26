@@ -1,8 +1,9 @@
 @use "../base/variable" as *;
 
 .guessnumbers {
-    text-align: center;
-    padding-top: 66px;
+  
+    // padding-top: 66px;
+    
 
     &__title {
         color: #000;
@@ -10,12 +11,12 @@
         font-weight: 400;
         font-size: 16px;
         position: relative;
-
+          text-align: center;
         &::after {
             content: '';
             position: absolute;
             left: 50%;
-            top: 145px;
+            top: 175px;
             transform: translateX(-50%);
             width: 536px;
             height: 1px;
@@ -29,6 +30,7 @@
         justify-content: space-around;
         // gap: 202px;
         margin-top: 36px;
+        
         // margin-top: auto;
     }
 

@@ -615,7 +615,7 @@ body {
   margin: 0 auto;
   width: 720px;
   height: 241px;
-  background-image: url(../img/ground.png);
+  background-image: url(./img/dino.png);
   background-repeat: repeat-x;
   background-position: bottom;
   background-size: 420px 10px;
@@ -625,27 +625,27 @@ body {
   animation: groundMove 2s linear infinite;
 }
 .dino__dino {
-  width: 50px;
-  height: 50px;
+  width: 44px;
+  height: 47px;
   position: absolute;
   bottom: 0;
   left: 50px;
-  background-image: url(../img/dino.png);
-  background-size: cover;
+  background-image: url("./img/dino-black.png.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .dino__dino.jump {
   animation: jump 0.65s linear;
 }
 .dino__cactus {
-  width: 15px;
-  height: 40px;
+  width: 17px;
+  height: 35px;
   position: absolute;
-  bottom: -10px;
-  right: -50px;
-  background-image: url(../img/cactus.webp);
+  bottom: 0;
+  right: -40px;
+  background-image: url("./img/cactus-black.png.png");
   background-repeat: no-repeat;
-  background-size: 15px 25px;
-  transform: scale(2);
+  background-size: contain;
 }
 .dino__points {
   position: absolute;
@@ -655,15 +655,6 @@ body {
   font-size: 14px;
   font-family: "Press Start 2P";
   font-weight: 400;
-}
-
-body.dark-mode .dino__dino {
-  background-image: url(../img/white-dino.png);
-}
-body.dark-mode .dino__cactus {
-  background-image: url(../img/white-cactus.webp);
-  bottom: -10px;
-  transform: scale(2);
 }
 
 @keyframes groundMove {
@@ -898,8 +889,6 @@ body.dark-mode .dino__cactus {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-right: 185px;
-  padding-left: auto;
 }
 .footer__link {
   display: flex;
@@ -926,8 +915,8 @@ body.dark-mode .dino__cactus {
   font-weight: 300;
 }
 .footer__contact {
-  padding: 0;
-  margin: 0;
+  margin-left: 230px;
+  margin-right: 230px;
 }
 .footer__item {
   font-size: 12px;
@@ -939,16 +928,14 @@ body.dark-mode .dino__cactus {
 }
 .footer__subscribe {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   margin-top: 36px;
   margin-bottom: 4px;
-  max-width: 220px;
 }
 .footer__input {
   padding: 8px 10px;
   border-radius: 20px;
   border: 1px solid #ccc;
-  outline: none;
   margin-right: 36px;
   margin-bottom: 18px;
 }
@@ -964,8 +951,7 @@ body.dark-mode .dino__cactus {
 .footer__note {
   color: #555;
   font-family: "Montserrat Alternates";
-  font-size: 6px;
-  font-style: normal;
+  font-size: 8px;
   font-weight: 400;
 }
 
@@ -1111,8 +1097,8 @@ body.dark-mode .dino__cactus {
 
 .modal__content {
   position: relative;
-  width: 600px;
-  max-width: 90%;
+  width: 463px;
+  height: 245px;
   padding: 60px 40px;
   background: #fff;
   border-radius: 30px;
@@ -1136,20 +1122,36 @@ body.dark-mode .dino__cactus {
 }
 
 .modal__title {
-  font-size: 28px;
-  margin-top: 40px;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -120%);
 }
 
 .modal__icons {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  gap: 46px;
   justify-items: center;
 }
 
+.modal__icons img:nth-child(1) {
+  transform: translateX(-50px);
+}
+
+.modal__icons img:nth-child(2) {
+  transform: translateX(50px);
+}
+
 .modal__icons img {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   transition: transform 0.3s ease;
 }
 

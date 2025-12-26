@@ -20,8 +20,8 @@
 
 .modal__content {
   position: relative;
-  width: 600px;
-  max-width: 90%;
+ width: 463.0px;
+ height: 245.0px;
   padding: 60px 40px;
   background: #fff;
   border-radius: 30px;
@@ -46,20 +46,39 @@
 }
 
 .modal__title {
-  font-size: 28px;
-  margin-top: 40px;
+color: #000;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-weight: 400;
+line-height: normal;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -120%);
 }
 
 .modal__icons {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  gap: 46px;
   justify-items: center;
 }
 
+.modal__icons img:nth-child(1){
+    transform: translateX(-50px);
+  
+}
+
+.modal__icons img:nth-child(2){
+    transform: translateX(50px);
+  
+}
+
 .modal__icons img {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   transition: transform 0.3s ease;
 }
 
