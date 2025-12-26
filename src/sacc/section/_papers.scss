@@ -1,15 +1,19 @@
 @use "../base/variable" as *;
 
 .paper{
-    padding-top: 80px;
+    // padding-top: 80px;
     text-align: center;
+    
 
     &__title{
+        
         color: #000;
         font-family: "Montserrat Alternates";
         font-weight: 400;
         font-size: 16px;
         position: relative;
+        padding-top: 72px;
+        
          &::after {
       content: '';
       position: absolute;
@@ -19,7 +23,7 @@
       width: 536px;
       height: 1px;
       background-color: #000;
-      top: 245px;
+      top: 385px;
     }
 
 
@@ -68,10 +72,10 @@
         color: #FFF;
         font-family: "Montserrat Alternates";
         font-size: 12px;
-        font-weight: 400;
+        font-weight: 400;   
 
 
-        padding: 10px 20px;
+        text-align: center;
         gap: 10px;
         border-radius: 20px;
         background: #000;

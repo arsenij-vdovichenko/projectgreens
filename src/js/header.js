@@ -1,53 +1,45 @@
-// const labelRef = document.querySelector(".hellow__label")
-// const checkbox = document.querySelector("#hellow__btn")
-
-
-// labelRef.addEventListener("click", ()=>{
-//     document.body.classList.toggle("active")
-// })
-
-
-
 const checkbox = document.querySelector("#hellow__btn");
 const sun = document.querySelector(".hellow__sun");
 const moon = document.querySelector(".hellow__monthn");
 
-
 const themeTexts = document.querySelectorAll(".theme-text");
 
-
-
-
-
-
-
-
-
+const themeDinos = document.querySelectorAll(".theme-dino");
 
 checkbox.addEventListener("change", () => {
     document.body.classList.toggle("active");
 
-    // Логіка для іконок
     if (checkbox.checked) {
-        sun.style.transform = "translateX(30px) rotate(90deg)";
+
         sun.style.opacity = "0";
-        moon.style.transform = "translateX(0) rotate(0deg)";
         moon.style.opacity = "1";
 
-        // Проходимо циклом по кожному знайденому тексту і робимо його білим
+
         themeTexts.forEach(text => {
             text.style.color = "#ffffff";
         });
 
+
+        //"brightness(0) => робить картинку повність чорною
+        //invert(1) => перевертає робить з чорного білу
+        themeDinos.forEach(dino => {
+                                
+            dino.style.filter = "brightness(0) invert(1)";
+        });
+
     } else {
-        sun.style.transform = "translateX(0) rotate(0deg)";
+ 
         sun.style.opacity = "1";
-        moon.style.transform = "translateX(-30px) rotate(-90deg)";
         moon.style.opacity = "0";
 
-        // Повертаємо всі тексти на чорний
         themeTexts.forEach(text => {
             text.style.color = "#000000";
+        });
+
+        themeDinos.forEach(dino => {
+            dino.style.filter = "none";
+
+            // dino.style.filter = "none"; прибирає всі ефекти динозаврику
         });
     }
 });
