@@ -6,7 +6,11 @@ const btnRef = document.querySelector(".header-modal__btn")
 
 
 
-
+window.addEventListener("keydown", (event) => {
+    if(event.code ===  "Escape"){
+        modalRef.style.display = "none"
+    }
+})
 
 imgRef.addEventListener("click", () => {
     modalRef.style.display = "none";
