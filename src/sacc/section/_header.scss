@@ -167,3 +167,14 @@ body{
 //   body.active p {
 //   color: #fff;
 // }
+
+body.active {
+    .container {
+        background-color: gray; 
+    }
+    
+    
+    .link {
+        color: #ffffff;
+    }
+}
